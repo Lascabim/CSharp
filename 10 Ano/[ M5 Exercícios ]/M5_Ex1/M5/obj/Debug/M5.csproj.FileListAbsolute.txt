@@ -1,0 +1,11 @@
+C:\Codigos\M5\M5\bin\Debug\M5.exe.config
+C:\Codigos\M5\M5\bin\Debug\M5.exe
+C:\Codigos\M5\M5\bin\Debug\M5.pdb
+C:\Codigos\M5\M5\obj\Debug\M5.csproj.AssemblyReference.cache
+C:\Codigos\M5\M5\obj\Debug\M5.csproj.SuggestedBindingRedirects.cache
+C:\Codigos\M5\M5\obj\Debug\M5.Form1.resources
+C:\Codigos\M5\M5\obj\Debug\M5.Properties.Resources.resources
+C:\Codigos\M5\M5\obj\Debug\M5.csproj.GenerateResource.cache
+C:\Codigos\M5\M5\obj\Debug\M5.csproj.CoreCompileInputs.cache
+C:\Codigos\M5\M5\obj\Debug\M5.exe
+C:\Codigos\M5\M5\obj\Debug\M5.pdb

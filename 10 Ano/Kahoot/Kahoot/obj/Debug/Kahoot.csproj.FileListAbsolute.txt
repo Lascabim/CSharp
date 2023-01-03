@@ -1,0 +1,8 @@
+C:\Users\Bandeira\Documents\VS\Kahoot\Kahoot\bin\Debug\Kahoot.exe.config
+C:\Users\Bandeira\Documents\VS\Kahoot\Kahoot\bin\Debug\Kahoot.exe
+C:\Users\Bandeira\Documents\VS\Kahoot\Kahoot\bin\Debug\Kahoot.pdb
+C:\Users\Bandeira\Documents\VS\Kahoot\Kahoot\obj\Debug\Kahoot.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\Kahoot\Kahoot\obj\Debug\Kahoot.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\Kahoot\Kahoot\obj\Debug\Kahoot.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\Kahoot\Kahoot\obj\Debug\Kahoot.exe
+C:\Users\Bandeira\Documents\VS\Kahoot\Kahoot\obj\Debug\Kahoot.pdb

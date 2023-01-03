@@ -1,0 +1,22 @@
+C:\Users\Bandeira\Documents\VS\BinDec\BinDec\bin\Debug\BinDec.exe.config
+C:\Users\Bandeira\Documents\VS\BinDec\BinDec\bin\Debug\BinDec.exe
+C:\Users\Bandeira\Documents\VS\BinDec\BinDec\bin\Debug\BinDec.pdb
+C:\Users\Bandeira\Documents\VS\BinDec\BinDec\obj\Debug\BinDec.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\BinDec\BinDec\obj\Debug\BinDec.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\BinDec\BinDec\obj\Debug\BinDec.Form1.resources
+C:\Users\Bandeira\Documents\VS\BinDec\BinDec\obj\Debug\BinDec.Properties.Resources.resources
+C:\Users\Bandeira\Documents\VS\BinDec\BinDec\obj\Debug\BinDec.csproj.GenerateResource.cache
+C:\Users\Bandeira\Documents\VS\BinDec\BinDec\obj\Debug\BinDec.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\BinDec\BinDec\obj\Debug\BinDec.exe
+C:\Users\Bandeira\Documents\VS\BinDec\BinDec\obj\Debug\BinDec.pdb
+C:\Users\Bandeira\Documents\Projetos PSI\BinDec\BinDec\bin\Debug\BinDec.exe.config
+C:\Users\Bandeira\Documents\Projetos PSI\BinDec\BinDec\bin\Debug\BinDec.exe
+C:\Users\Bandeira\Documents\Projetos PSI\BinDec\BinDec\bin\Debug\BinDec.pdb
+C:\Users\Bandeira\Documents\Projetos PSI\BinDec\BinDec\obj\Debug\BinDec.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\Projetos PSI\BinDec\BinDec\obj\Debug\BinDec.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\Projetos PSI\BinDec\BinDec\obj\Debug\BinDec.Form1.resources
+C:\Users\Bandeira\Documents\Projetos PSI\BinDec\BinDec\obj\Debug\BinDec.Properties.Resources.resources
+C:\Users\Bandeira\Documents\Projetos PSI\BinDec\BinDec\obj\Debug\BinDec.csproj.GenerateResource.cache
+C:\Users\Bandeira\Documents\Projetos PSI\BinDec\BinDec\obj\Debug\BinDec.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\Projetos PSI\BinDec\BinDec\obj\Debug\BinDec.exe
+C:\Users\Bandeira\Documents\Projetos PSI\BinDec\BinDec\obj\Debug\BinDec.pdb

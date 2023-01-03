@@ -1,0 +1,11 @@
+C:\Users\Bandeira\Documents\VS\M5_Ex4\M5_Ex4\obj\Debug\M5_Ex4.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\M5_Ex4\M5_Ex4\obj\Debug\M5_Ex4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\M5_Ex4\M5_Ex4\obj\Debug\M5_Ex4.Form1.resources
+C:\Users\Bandeira\Documents\VS\M5_Ex4\M5_Ex4\obj\Debug\M5_Ex4.Properties.Resources.resources
+C:\Users\Bandeira\Documents\VS\M5_Ex4\M5_Ex4\obj\Debug\M5_Ex4.csproj.GenerateResource.cache
+C:\Users\Bandeira\Documents\VS\M5_Ex4\M5_Ex4\obj\Debug\M5_Ex4.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\M5_Ex4\M5_Ex4\bin\Debug\M5_Ex4.exe.config
+C:\Users\Bandeira\Documents\VS\M5_Ex4\M5_Ex4\bin\Debug\M5_Ex4.exe
+C:\Users\Bandeira\Documents\VS\M5_Ex4\M5_Ex4\bin\Debug\M5_Ex4.pdb
+C:\Users\Bandeira\Documents\VS\M5_Ex4\M5_Ex4\obj\Debug\M5_Ex4.exe
+C:\Users\Bandeira\Documents\VS\M5_Ex4\M5_Ex4\obj\Debug\M5_Ex4.pdb

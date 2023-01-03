@@ -1,0 +1,12 @@
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-8\POO-8\bin\Debug\POO-8.exe.config
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-8\POO-8\bin\Debug\POO-8.exe
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-8\POO-8\bin\Debug\POO-8.pdb
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-8\POO-8\obj\Debug\POO-8.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-8\POO-8\obj\Debug\POO-8.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-8\POO-8\obj\Debug\POO_8.Form1.resources
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-8\POO-8\obj\Debug\POO_8.Properties.Resources.resources
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-8\POO-8\obj\Debug\POO-8.csproj.GenerateResource.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-8\POO-8\obj\Debug\POO-8.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-8\POO-8\obj\Debug\POO-8.exe
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-8\POO-8\obj\Debug\POO-8.pdb
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-8\POO-8\obj\Debug\POO_8.Form2.resources

@@ -1,0 +1,8 @@
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-5\POO-5\bin\Debug\POO-5.exe.config
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-5\POO-5\bin\Debug\POO-5.exe
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-5\POO-5\bin\Debug\POO-5.pdb
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-5\POO-5\obj\Debug\POO-5.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-5\POO-5\obj\Debug\POO-5.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-5\POO-5\obj\Debug\POO-5.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-5\POO-5\obj\Debug\POO-5.exe
+C:\Users\Bandeira\Documents\VS\11 Ano\POO-5\POO-5\obj\Debug\POO-5.pdb

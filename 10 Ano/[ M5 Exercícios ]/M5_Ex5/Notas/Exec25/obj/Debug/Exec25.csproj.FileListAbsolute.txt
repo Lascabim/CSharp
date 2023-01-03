@@ -1,0 +1,11 @@
+C:\Users\Bandeira\Documents\VS\Exec25\Exec25\bin\Debug\Exec25.exe.config
+C:\Users\Bandeira\Documents\VS\Exec25\Exec25\bin\Debug\Exec25.exe
+C:\Users\Bandeira\Documents\VS\Exec25\Exec25\bin\Debug\Exec25.pdb
+C:\Users\Bandeira\Documents\VS\Exec25\Exec25\obj\Debug\Exec25.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\Exec25\Exec25\obj\Debug\Exec25.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\Exec25\Exec25\obj\Debug\Exec25.Form1.resources
+C:\Users\Bandeira\Documents\VS\Exec25\Exec25\obj\Debug\Exec25.Properties.Resources.resources
+C:\Users\Bandeira\Documents\VS\Exec25\Exec25\obj\Debug\Exec25.csproj.GenerateResource.cache
+C:\Users\Bandeira\Documents\VS\Exec25\Exec25\obj\Debug\Exec25.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\Exec25\Exec25\obj\Debug\Exec25.exe
+C:\Users\Bandeira\Documents\VS\Exec25\Exec25\obj\Debug\Exec25.pdb

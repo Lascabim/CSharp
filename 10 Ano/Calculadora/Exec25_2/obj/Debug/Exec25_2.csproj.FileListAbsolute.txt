@@ -1,0 +1,22 @@
+C:\Users\Bandeira\Documents\VS\Exec25_2\Exec25_2\bin\Debug\Exec25_2.exe.config
+C:\Users\Bandeira\Documents\VS\Exec25_2\Exec25_2\bin\Debug\Exec25_2.exe
+C:\Users\Bandeira\Documents\VS\Exec25_2\Exec25_2\bin\Debug\Exec25_2.pdb
+C:\Users\Bandeira\Documents\VS\Exec25_2\Exec25_2\obj\Debug\Exec25_2.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\Exec25_2\Exec25_2\obj\Debug\Exec25_2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\Exec25_2\Exec25_2\obj\Debug\Exec25_2.Form1.resources
+C:\Users\Bandeira\Documents\VS\Exec25_2\Exec25_2\obj\Debug\Exec25_2.Properties.Resources.resources
+C:\Users\Bandeira\Documents\VS\Exec25_2\Exec25_2\obj\Debug\Exec25_2.csproj.GenerateResource.cache
+C:\Users\Bandeira\Documents\VS\Exec25_2\Exec25_2\obj\Debug\Exec25_2.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\Exec25_2\Exec25_2\obj\Debug\Exec25_2.exe
+C:\Users\Bandeira\Documents\VS\Exec25_2\Exec25_2\obj\Debug\Exec25_2.pdb
+C:\Users\Bandeira\Documents\Projetos PSI\Calc\Exec25_2\bin\Debug\Exec25_2.exe.config
+C:\Users\Bandeira\Documents\Projetos PSI\Calc\Exec25_2\bin\Debug\Exec25_2.exe
+C:\Users\Bandeira\Documents\Projetos PSI\Calc\Exec25_2\bin\Debug\Exec25_2.pdb
+C:\Users\Bandeira\Documents\Projetos PSI\Calc\Exec25_2\obj\Debug\Exec25_2.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\Projetos PSI\Calc\Exec25_2\obj\Debug\Exec25_2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\Projetos PSI\Calc\Exec25_2\obj\Debug\Exec25_2.Form1.resources
+C:\Users\Bandeira\Documents\Projetos PSI\Calc\Exec25_2\obj\Debug\Exec25_2.Properties.Resources.resources
+C:\Users\Bandeira\Documents\Projetos PSI\Calc\Exec25_2\obj\Debug\Exec25_2.csproj.GenerateResource.cache
+C:\Users\Bandeira\Documents\Projetos PSI\Calc\Exec25_2\obj\Debug\Exec25_2.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\Projetos PSI\Calc\Exec25_2\obj\Debug\Exec25_2.exe
+C:\Users\Bandeira\Documents\Projetos PSI\Calc\Exec25_2\obj\Debug\Exec25_2.pdb

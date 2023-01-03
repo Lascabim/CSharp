@@ -1,0 +1,14 @@
+C:\Users\Bandeira\Documents\VS\11 Ano\Projeto Final M10 Ze\Projeto Final M10 Ze\bin\Debug\Projeto Final M10 Ze.exe.config
+C:\Users\Bandeira\Documents\VS\11 Ano\Projeto Final M10 Ze\Projeto Final M10 Ze\bin\Debug\Projeto Final M10 Ze.exe
+C:\Users\Bandeira\Documents\VS\11 Ano\Projeto Final M10 Ze\Projeto Final M10 Ze\bin\Debug\Projeto Final M10 Ze.pdb
+C:\Users\Bandeira\Documents\VS\11 Ano\Projeto Final M10 Ze\Projeto Final M10 Ze\obj\Debug\Projeto Final M10 Ze.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\Projeto Final M10 Ze\Projeto Final M10 Ze\obj\Debug\Projeto Final M10 Ze.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\Projeto Final M10 Ze\Projeto Final M10 Ze\obj\Debug\Projeto_Final_M10_Ze.Form1.resources
+C:\Users\Bandeira\Documents\VS\11 Ano\Projeto Final M10 Ze\Projeto Final M10 Ze\obj\Debug\Projeto_Final_M10_Ze.Properties.Resources.resources
+C:\Users\Bandeira\Documents\VS\11 Ano\Projeto Final M10 Ze\Projeto Final M10 Ze\obj\Debug\Projeto Final M10 Ze.csproj.GenerateResource.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\Projeto Final M10 Ze\Projeto Final M10 Ze\obj\Debug\Projeto Final M10 Ze.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\Projeto Final M10 Ze\Projeto Final M10 Ze\obj\Debug\Projeto Final M10 Ze.exe
+C:\Users\Bandeira\Documents\VS\11 Ano\Projeto Final M10 Ze\Projeto Final M10 Ze\obj\Debug\Projeto Final M10 Ze.pdb
+C:\Users\Bandeira\Documents\VS\11 Ano\Projeto Final M10 Ze\Projeto Final M10 Ze\obj\Debug\Projeto_Final_M10_Ze.Form2.resources
+C:\Users\Bandeira\Documents\VS\11 Ano\Projeto Final M10 Ze\Projeto Final M10 Ze\obj\Debug\Projeto_Final_M10_Ze.Form3.resources
+C:\Users\Bandeira\Documents\VS\11 Ano\Projeto Final M10 Ze\Projeto Final M10 Ze\obj\Debug\Projeto_Final_M10_Ze.Form4.resources

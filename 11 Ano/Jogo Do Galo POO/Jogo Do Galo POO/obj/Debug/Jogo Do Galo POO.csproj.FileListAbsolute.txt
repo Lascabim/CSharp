@@ -1,0 +1,11 @@
+C:\Users\Bandeira\Documents\VS\11 Ano\Jogo Do Galo POO\Jogo Do Galo POO\bin\Debug\Jogo Do Galo POO.exe.config
+C:\Users\Bandeira\Documents\VS\11 Ano\Jogo Do Galo POO\Jogo Do Galo POO\bin\Debug\Jogo Do Galo POO.exe
+C:\Users\Bandeira\Documents\VS\11 Ano\Jogo Do Galo POO\Jogo Do Galo POO\bin\Debug\Jogo Do Galo POO.pdb
+C:\Users\Bandeira\Documents\VS\11 Ano\Jogo Do Galo POO\Jogo Do Galo POO\obj\Debug\Jogo Do Galo POO.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\Jogo Do Galo POO\Jogo Do Galo POO\obj\Debug\Jogo Do Galo POO.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\Jogo Do Galo POO\Jogo Do Galo POO\obj\Debug\Jogo_Do_Galo_POO.Form1.resources
+C:\Users\Bandeira\Documents\VS\11 Ano\Jogo Do Galo POO\Jogo Do Galo POO\obj\Debug\Jogo_Do_Galo_POO.Properties.Resources.resources
+C:\Users\Bandeira\Documents\VS\11 Ano\Jogo Do Galo POO\Jogo Do Galo POO\obj\Debug\Jogo Do Galo POO.csproj.GenerateResource.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\Jogo Do Galo POO\Jogo Do Galo POO\obj\Debug\Jogo Do Galo POO.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\Jogo Do Galo POO\Jogo Do Galo POO\obj\Debug\Jogo Do Galo POO.exe
+C:\Users\Bandeira\Documents\VS\11 Ano\Jogo Do Galo POO\Jogo Do Galo POO\obj\Debug\Jogo Do Galo POO.pdb

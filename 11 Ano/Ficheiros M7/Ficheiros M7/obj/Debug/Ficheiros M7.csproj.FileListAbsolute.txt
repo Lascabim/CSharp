@@ -1,0 +1,11 @@
+C:\Users\Bandeira\Documents\VS\11 Ano\Ficheiros M7\Ficheiros M7\bin\Debug\Ficheiros M7.exe.config
+C:\Users\Bandeira\Documents\VS\11 Ano\Ficheiros M7\Ficheiros M7\bin\Debug\Ficheiros M7.exe
+C:\Users\Bandeira\Documents\VS\11 Ano\Ficheiros M7\Ficheiros M7\bin\Debug\Ficheiros M7.pdb
+C:\Users\Bandeira\Documents\VS\11 Ano\Ficheiros M7\Ficheiros M7\obj\Debug\Ficheiros M7.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\Ficheiros M7\Ficheiros M7\obj\Debug\Ficheiros M7.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\Ficheiros M7\Ficheiros M7\obj\Debug\Ficheiros_M7.Form1.resources
+C:\Users\Bandeira\Documents\VS\11 Ano\Ficheiros M7\Ficheiros M7\obj\Debug\Ficheiros_M7.Properties.Resources.resources
+C:\Users\Bandeira\Documents\VS\11 Ano\Ficheiros M7\Ficheiros M7\obj\Debug\Ficheiros M7.csproj.GenerateResource.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\Ficheiros M7\Ficheiros M7\obj\Debug\Ficheiros M7.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\Ficheiros M7\Ficheiros M7\obj\Debug\Ficheiros M7.exe
+C:\Users\Bandeira\Documents\VS\11 Ano\Ficheiros M7\Ficheiros M7\obj\Debug\Ficheiros M7.pdb

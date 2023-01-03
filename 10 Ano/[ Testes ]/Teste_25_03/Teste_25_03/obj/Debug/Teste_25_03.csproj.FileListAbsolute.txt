@@ -1,0 +1,11 @@
+C:\Users\Bandeira\Documents\VS\Teste_25_03\Teste_25_03\bin\Debug\Teste_25_03.exe.config
+C:\Users\Bandeira\Documents\VS\Teste_25_03\Teste_25_03\bin\Debug\Teste_25_03.exe
+C:\Users\Bandeira\Documents\VS\Teste_25_03\Teste_25_03\bin\Debug\Teste_25_03.pdb
+C:\Users\Bandeira\Documents\VS\Teste_25_03\Teste_25_03\obj\Debug\Teste_25_03.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\Teste_25_03\Teste_25_03\obj\Debug\Teste_25_03.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\Teste_25_03\Teste_25_03\obj\Debug\Teste_25_03.Form1.resources
+C:\Users\Bandeira\Documents\VS\Teste_25_03\Teste_25_03\obj\Debug\Teste_25_03.Properties.Resources.resources
+C:\Users\Bandeira\Documents\VS\Teste_25_03\Teste_25_03\obj\Debug\Teste_25_03.csproj.GenerateResource.cache
+C:\Users\Bandeira\Documents\VS\Teste_25_03\Teste_25_03\obj\Debug\Teste_25_03.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\Teste_25_03\Teste_25_03\obj\Debug\Teste_25_03.exe
+C:\Users\Bandeira\Documents\VS\Teste_25_03\Teste_25_03\obj\Debug\Teste_25_03.pdb

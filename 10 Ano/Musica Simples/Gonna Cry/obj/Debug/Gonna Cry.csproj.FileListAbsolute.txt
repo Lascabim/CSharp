@@ -1,0 +1,11 @@
+C:\Users\Bandeira\Documents\VS\Gonna Cry\Gonna Cry\bin\Debug\Gonna Cry.exe.config
+C:\Users\Bandeira\Documents\VS\Gonna Cry\Gonna Cry\bin\Debug\Gonna Cry.exe
+C:\Users\Bandeira\Documents\VS\Gonna Cry\Gonna Cry\bin\Debug\Gonna Cry.pdb
+C:\Users\Bandeira\Documents\VS\Gonna Cry\Gonna Cry\obj\Debug\Gonna Cry.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\Gonna Cry\Gonna Cry\obj\Debug\Gonna Cry.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\Gonna Cry\Gonna Cry\obj\Debug\Gonna_Cry.Form1.resources
+C:\Users\Bandeira\Documents\VS\Gonna Cry\Gonna Cry\obj\Debug\Gonna_Cry.Properties.Resources.resources
+C:\Users\Bandeira\Documents\VS\Gonna Cry\Gonna Cry\obj\Debug\Gonna Cry.csproj.GenerateResource.cache
+C:\Users\Bandeira\Documents\VS\Gonna Cry\Gonna Cry\obj\Debug\Gonna Cry.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\Gonna Cry\Gonna Cry\obj\Debug\Gonna Cry.exe
+C:\Users\Bandeira\Documents\VS\Gonna Cry\Gonna Cry\obj\Debug\Gonna Cry.pdb

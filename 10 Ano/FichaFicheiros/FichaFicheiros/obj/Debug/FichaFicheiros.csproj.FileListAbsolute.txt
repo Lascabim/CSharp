@@ -1,0 +1,11 @@
+C:\Users\Bandeira\Documents\VS\FichaFicheiros\FichaFicheiros\bin\Debug\FichaFicheiros.exe.config
+C:\Users\Bandeira\Documents\VS\FichaFicheiros\FichaFicheiros\bin\Debug\FichaFicheiros.exe
+C:\Users\Bandeira\Documents\VS\FichaFicheiros\FichaFicheiros\bin\Debug\FichaFicheiros.pdb
+C:\Users\Bandeira\Documents\VS\FichaFicheiros\FichaFicheiros\obj\Debug\FichaFicheiros.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\FichaFicheiros\FichaFicheiros\obj\Debug\FichaFicheiros.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\FichaFicheiros\FichaFicheiros\obj\Debug\FichaFicheiros.Form1.resources
+C:\Users\Bandeira\Documents\VS\FichaFicheiros\FichaFicheiros\obj\Debug\FichaFicheiros.Properties.Resources.resources
+C:\Users\Bandeira\Documents\VS\FichaFicheiros\FichaFicheiros\obj\Debug\FichaFicheiros.csproj.GenerateResource.cache
+C:\Users\Bandeira\Documents\VS\FichaFicheiros\FichaFicheiros\obj\Debug\FichaFicheiros.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\FichaFicheiros\FichaFicheiros\obj\Debug\FichaFicheiros.exe
+C:\Users\Bandeira\Documents\VS\FichaFicheiros\FichaFicheiros\obj\Debug\FichaFicheiros.pdb
