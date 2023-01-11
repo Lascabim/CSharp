@@ -35,3 +35,4 @@ C:\Users\Bandeira\Documents\VS\11 Ano\Loja Online\Loja Online\obj\Debug\Loja Onl
 C:\Users\Bandeira\Documents\VS\11 Ano\Loja Online\Loja Online\obj\Debug\Loja Online.exe
 C:\Users\Bandeira\Documents\VS\11 Ano\Loja Online\Loja Online\obj\Debug\Loja Online.pdb
 C:\Users\Bandeira\Documents\VS\11 Ano\Loja Online\Loja Online\obj\Debug\Loja_Online.Carrinho.resources
+C:\Users\Bandeira\Documents\VS\11 Ano\Loja Online\Loja Online\obj\Debug\Loja_Online.Form3.resources

@@ -138,8 +138,9 @@ namespace Loja_Online
                     {
                         MessageBox.Show("Número de cartão inválido");
                         return;
+                    }
                 }
-            }
+
                 else if(radioButton2.Checked)
                 {
                     string cartaIN = Interaction.InputBox("Introduz o número do cartão: ", "Número do cartão!");
@@ -160,6 +161,10 @@ namespace Loja_Online
             if(moradaIN.Length > 6)
             {
                 MessageBox.Show("Produto enviado com sucesso!");
+            }
+            else
+            {
+                MessageBox.Show("Morada demasiado curta!");
             }
         }
 

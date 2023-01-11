@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Microsoft.VisualBasic;
+using System.Data.SqlClient;
 
 namespace Loja_Online
 {
@@ -25,15 +26,6 @@ namespace Loja_Online
             panel2.Visible = true;
             btnMas.BackColor = Color.White;
 
-            /*
-            string screenWidth = Screen.PrimaryScreen.Bounds.Width.ToString();
-            string screenHeight = Screen.PrimaryScreen.Bounds.Height.ToString();
-
-            int screenWidthF = int.Parse(screenWidth) - 100;
-            int screenHeightF = int.Parse(screenHeight) - 100;        
-
-            Size = new Size(screenWidthF, screenHeightF);
-            */
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -60,7 +52,7 @@ namespace Loja_Online
             FileStream file;
             file = new FileStream(filepath, FileMode.Append, FileAccess.Write);
 
-            string moradaIN = "Rua da casa";
+            string moradaIN = "Morada do Cliente";
 
             Random random = new Random();
             int idGen = random.Next(1000);
@@ -79,9 +71,9 @@ namespace Loja_Online
 
         private void button7_Click(object sender, EventArgs e)
         {
-            string password = Interaction.InputBox("Introduz a password: ", "Gestão da Loja");
+            string password = (Interaction.InputBox("Introduz a password: ", "Gestão da Loja")).ToLower();
 
-            if (password == "ADMIN" || password == "admin")
+            if (password == "admin")
             {
                 this.Hide();
                 var StaffForm = new Form2();

@@ -25,7 +25,6 @@ namespace Loja_Online
             {
 
                 File.Create(filepath);
-
             }
 
             StreamReader srr;
@@ -223,6 +222,14 @@ namespace Loja_Online
 
             var Forms1 = new Form1();
             Forms1.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            var Forms3 = new Form3();
+            Forms3.Show();
         }
     }
 }
