@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using Microsoft.VisualBasic;
 using System.Data.SqlClient;
+using System.Reflection.Emit;
 
 namespace Loja_Online
 {
@@ -20,17 +21,114 @@ namespace Loja_Online
 
         public Form1()
         {
-
             InitializeComponent();
 
             panel2.Visible = true;
             btnMas.BackColor = Color.White;
 
+            string tempPath = System.IO.Path.GetTempPath();
+            string filepathS = tempPath + "/stock.txt";
+
+            if (!File.Exists(filepathS))
+            {
+                FileStream fileS = new FileStream(filepathS, FileMode.Append, FileAccess.Write);
+                using (StreamWriter wt = new StreamWriter(fileS))
+                {
+                    wt.WriteLine("50|50|50|");
+                    wt.Close();
+                }
+
+                fileS.Close();
+            }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        public bool checkStock(string item)
         {
+            string tempPath = System.IO.Path.GetTempPath();
+            string filepath = tempPath + "/stock.txt";
 
+            bool readyTG = false;
+
+            if (!File.Exists(filepath))
+            {
+                FileStream file = new FileStream(filepath, FileMode.Append, FileAccess.Write);
+                using (StreamWriter writetext = new StreamWriter(file))
+                {
+                    writetext.WriteLine("50|50|50|");
+                    writetext.Close();
+                }
+
+                file.Close();
+                readyTG = false;
+            }
+            else
+            {
+                string RelogioS, ColarS, AnelS;
+
+                StreamReader sr;
+                sr = new StreamReader(filepath);
+
+                using (sr)
+                {
+
+                    while (sr.Peek() > -1)
+                    {
+                        int RelogioL, ColarL, AnelL;
+
+                        int indexPause = 0;
+                        int indexPause2 = 0;
+                        int indexPause3 = 0;
+
+                        string rawline = sr.ReadLine();
+
+                        //GET |
+                        indexPause = rawline.IndexOf('|', indexPause);
+                        indexPause2 = rawline.IndexOf('|', indexPause + 1);
+                        indexPause3 = rawline.IndexOf('|', indexPause2 + 1);
+
+                        // GET RELOGIOS
+                        RelogioS = rawline.Substring(0, indexPause);
+                        RelogioL = RelogioS.Length;
+                        //MessageBox.Show(RelogioS);
+
+                        //GET COLARS
+                        ColarL = (indexPause2 - indexPause) - 1;
+                        ColarS = rawline.Substring(indexPause + 1 , ColarL);
+                        //MessageBox.Show(ColarS);
+
+                        //GET ANELS
+                        AnelL = (indexPause3 - indexPause2) - 1;
+                        AnelS = rawline.Substring(indexPause2 + 1 , AnelL);
+                        //MessageBox.Show(AnelS);
+
+                        if (item == "Relogio")
+                        {
+                            if(Convert.ToDouble(RelogioS) > 0)
+                            {
+                                readyTG = true;
+                            }
+                        }
+                        else if (item == "Colar")
+                        {
+                            if (Convert.ToDouble(ColarS) > 0)
+                            {
+                                readyTG = true;
+                            }
+                        }
+                        else if (item == "Anel")
+                        {
+                            if (Convert.ToDouble(AnelS) > 0)
+                            {
+                                readyTG = true;
+                            }
+                        }
+                    }
+                }
+
+                sr.Close();
+            }
+
+            return readyTG;
         }
 
         public string sendData(string item, string preco)
@@ -52,7 +150,7 @@ namespace Loja_Online
             FileStream file;
             file = new FileStream(filepath, FileMode.Append, FileAccess.Write);
 
-            string moradaIN = "Morada do Cliente";
+            string moradaIN = "** Morada do Cliente **";
 
             Random random = new Random();
             int idGen = random.Next(1000);
@@ -114,8 +212,16 @@ namespace Loja_Online
 
         private void button1_Click(object sender, EventArgs e)
         {
-            sendData("Relógio", "50");
-            MessageBox.Show("Produto adicionado ao carrinho!");
+            bool stockAvailable = checkStock("Relogio");
+            if(stockAvailable)
+            {
+                sendData("Relogio", "50");
+                MessageBox.Show("Produto adicionado ao carrinho!");
+            }
+            else
+            {
+                MessageBox.Show("Produto sem stock!");
+            }
         }
 
         private void btnAneis_Click(object sender, EventArgs e)
@@ -125,8 +231,16 @@ namespace Loja_Online
 
         private void button2_Click(object sender, EventArgs e)
         {
-            sendData("Colár", "25");
-            MessageBox.Show("Produto adicionado ao carrinho!");
+            bool stockAvailable = checkStock("Colar");
+            if (stockAvailable)
+            {
+                sendData("Colar", "25");
+                MessageBox.Show("Produto adicionado ao carrinho!");
+            }
+            else
+            {
+                MessageBox.Show("Produto sem stock!");
+            }
         }
 
         private void btnColares_Click(object sender, EventArgs e)
@@ -136,8 +250,16 @@ namespace Loja_Online
 
         private void button4_Click(object sender, EventArgs e)
         {
-            sendData("Anél", "15");
-            MessageBox.Show("Produto adicionado ao carrinho!");
+            bool stockAvailable = checkStock("Anel");
+            if (stockAvailable)
+            {
+                sendData("Anel", "15");
+                MessageBox.Show("Produto adicionado ao carrinho!");
+            }
+            else
+            {
+                MessageBox.Show("Produto sem stock!");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -164,6 +286,12 @@ namespace Loja_Online
                 Carrinho form = new Carrinho();
                 form.Show();
             }
+        }
+
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

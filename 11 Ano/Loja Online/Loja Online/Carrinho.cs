@@ -15,6 +15,7 @@ namespace Loja_Online
     public partial class Carrinho : Form
     {
         static int PrecoTotal = 0;
+        static int RelogioC, ColarC, AnelC;
 
         public Carrinho()
         {
@@ -64,6 +65,21 @@ namespace Loja_Online
 
                     // GET ITEM
                     Item = rawline.Substring(6, itemPause);
+                    
+                    if(Item == "Relogio") 
+                    {
+                        RelogioC++;
+                    }
+                    else if (Item == "Colar")
+                    {
+                        ColarC++;
+                    }
+                    else if (Item == "Anel")
+                    {
+                        AnelC++;
+                    }
+
+                    MessageBox.Show(Item);
                     ItemL = Item.Length;
 
                     //GETPRICE
@@ -116,11 +132,82 @@ namespace Loja_Online
             }
         }
 
+        private void cleanCart()
+        {
+            RelogioC = 0;
+            ColarC = 0; 
+            AnelC = 0;
+
+            string tempPath = System.IO.Path.GetTempPath();
+            string filepath = tempPath + "/pedidos.txt";
+
+            File.Delete(filepath);
+            File.Create(filepath);
+
+            MessageBox.Show("Carrinho Limpo");
+        }
+
+        private string getStockData()
+        {
+            string tempPath = System.IO.Path.GetTempPath();
+            string filepath = tempPath + "/pedidos.txt";
+
+            string RTValue;
+
+            string RelogioS, ColarS, AnelS;
+
+            StreamReader sr;
+            sr = new StreamReader(filepath);
+
+            using (sr)
+            {
+
+                while (sr.Peek() > -1)
+                {
+                    int RelogioL, ColarL, AnelL;
+
+                    int indexPause = 0;
+                    int indexPause2 = 0;
+                    int indexPause3 = 0;
+
+                    string rawline = sr.ReadLine();
+
+                    //GET |
+                    indexPause = rawline.IndexOf('|', indexPause);
+                    indexPause2 = rawline.IndexOf('|', indexPause + 1);
+                    indexPause3 = rawline.IndexOf('|', indexPause2 + 1);
+
+                    // GET RELOGIOS
+                    RelogioS = rawline.Substring(0, indexPause);
+                    RelogioL = RelogioS.Length;
+                    //MessageBox.Show(RelogioS);
+
+                    //GET COLARS
+                    ColarL = (indexPause2 - indexPause) - 1;
+                    ColarS = rawline.Substring(indexPause + 1, ColarL);
+                    //MessageBox.Show(ColarS);
+
+                    //GET ANELS
+                    AnelL = (indexPause3 - indexPause2) - 1;
+                    AnelS = rawline.Substring(indexPause2 + 1, AnelL);
+                    //MessageBox.Show(AnelS);
+
+                    //RTValue = RelogioS
+                }
+            }
+
+            sr.Close();
+        }
+
+        private void refreshStock(int RelogioC, int ColarC, int )
+        {
+
+        }
+
         private void FinalPrice(double percent)
         {
             label9.Text = Convert.ToString((PrecoTotal * percent)) + "€";
             label7.Text = Convert.ToString((PrecoTotal * percent) + PrecoTotal + (PrecoTotal/2)) + "€";
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -161,6 +248,13 @@ namespace Loja_Online
             if(moradaIN.Length > 6)
             {
                 MessageBox.Show("Produto enviado com sucesso!");
+                cleanCart();
+
+                refreshStock(RelogioC, ColarC, AnelC);
+
+                this.Hide();
+                var Forms1 = new Form1();
+                Forms1.Show();
             }
             else
             {
@@ -194,16 +288,11 @@ namespace Loja_Online
 
         private void button3_Click(object sender, EventArgs e)
         {
+            cleanCart();
 
-            string tempPath = System.IO.Path.GetTempPath();
-            string filepath = tempPath + "/pedidos.txt";
-
-
-            File.Delete(filepath);
-
-            File.Create(filepath);
-
-            MessageBox.Show("Carrinho Limpo");
+            this.Hide();
+            var Forms1 = new Form1();
+            Forms1.Show();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
