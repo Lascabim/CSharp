@@ -220,7 +220,7 @@ namespace Loja_Online
         {
             this.Hide();
 
-            var Forms1 = new Form1();
+            var Forms1 = new Form1("NULO");
             Forms1.Show();
         }
 

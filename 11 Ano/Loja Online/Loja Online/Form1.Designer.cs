@@ -31,19 +31,18 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.btnMas = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnColares = new System.Windows.Forms.Button();
+            this.btnAneis = new System.Windows.Forms.Button();
+            this.btnRelogios = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnRelogios = new System.Windows.Forms.Button();
-            this.btnAneis = new System.Windows.Forms.Button();
-            this.btnColares = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -59,27 +58,11 @@
             this.label1.Text = "JOALHARIA  GOMES";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnMas
-            // 
-            this.btnMas.FlatAppearance.BorderSize = 0;
-            this.btnMas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnMas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMas.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMas.Location = new System.Drawing.Point(0, 0);
-            this.btnMas.Name = "btnMas";
-            this.btnMas.Size = new System.Drawing.Size(174, 63);
-            this.btnMas.TabIndex = 2;
-            this.btnMas.Text = "HOMEM";
-            this.btnMas.UseVisualStyleBackColor = true;
-            this.btnMas.Visible = false;
-            this.btnMas.Click += new System.EventHandler(this.btnMas_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.btnMas);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -121,19 +104,44 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "RelogioFem.png");
             // 
-            // panel2
+            // btnColares
             // 
-            this.panel2.AutoSize = true;
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.btnRelogios);
-            this.panel2.Controls.Add(this.btnAneis);
-            this.panel2.Controls.Add(this.btnColares);
-            this.panel2.Location = new System.Drawing.Point(30, 137);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1389, 352);
-            this.panel2.TabIndex = 10;
+            this.btnColares.BackColor = System.Drawing.Color.White;
+            this.btnColares.BackgroundImage = global::Loja_Online.Properties.Resources.Colar_2_0;
+            this.btnColares.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnColares.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColares.Location = new System.Drawing.Point(409, 12);
+            this.btnColares.Name = "btnColares";
+            this.btnColares.Size = new System.Drawing.Size(370, 330);
+            this.btnColares.TabIndex = 6;
+            this.btnColares.UseVisualStyleBackColor = false;
+            this.btnColares.Click += new System.EventHandler(this.btnColares_Click);
+            // 
+            // btnAneis
+            // 
+            this.btnAneis.BackColor = System.Drawing.Color.White;
+            this.btnAneis.BackgroundImage = global::Loja_Online.Properties.Resources.Anel_2_0;
+            this.btnAneis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAneis.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAneis.Location = new System.Drawing.Point(814, 12);
+            this.btnAneis.Name = "btnAneis";
+            this.btnAneis.Size = new System.Drawing.Size(370, 330);
+            this.btnAneis.TabIndex = 7;
+            this.btnAneis.UseVisualStyleBackColor = false;
+            this.btnAneis.Click += new System.EventHandler(this.btnAneis_Click);
+            // 
+            // btnRelogios
+            // 
+            this.btnRelogios.BackColor = System.Drawing.Color.White;
+            this.btnRelogios.BackgroundImage = global::Loja_Online.Properties.Resources.Relógio_2_0;
+            this.btnRelogios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRelogios.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelogios.Location = new System.Drawing.Point(9, 12);
+            this.btnRelogios.Name = "btnRelogios";
+            this.btnRelogios.Size = new System.Drawing.Size(370, 330);
+            this.btnRelogios.TabIndex = 5;
+            this.btnRelogios.UseVisualStyleBackColor = false;
+            this.btnRelogios.Click += new System.EventHandler(this.btnRelogios_Click);
             // 
             // button4
             // 
@@ -147,6 +155,20 @@
             this.button4.Text = "Adicionar";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.AutoSize = true;
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnRelogios);
+            this.panel2.Controls.Add(this.btnAneis);
+            this.panel2.Controls.Add(this.btnColares);
+            this.panel2.Location = new System.Drawing.Point(30, 137);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1389, 352);
+            this.panel2.TabIndex = 10;
             // 
             // button2
             // 
@@ -166,52 +188,13 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(212, 232);
+            this.button1.Location = new System.Drawing.Point(210, 232);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 23);
-            this.button1.TabIndex = 11;
+            this.button1.TabIndex = 14;
             this.button1.Text = "Adicionar";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnRelogios
-            // 
-            this.btnRelogios.BackColor = System.Drawing.Color.White;
-            this.btnRelogios.BackgroundImage = global::Loja_Online.Properties.Resources.Relógio_2_0;
-            this.btnRelogios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRelogios.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelogios.Location = new System.Drawing.Point(9, 12);
-            this.btnRelogios.Name = "btnRelogios";
-            this.btnRelogios.Size = new System.Drawing.Size(370, 330);
-            this.btnRelogios.TabIndex = 5;
-            this.btnRelogios.UseVisualStyleBackColor = false;
-            this.btnRelogios.Click += new System.EventHandler(this.btnRelogios_Click);
-            // 
-            // btnAneis
-            // 
-            this.btnAneis.BackColor = System.Drawing.Color.White;
-            this.btnAneis.BackgroundImage = global::Loja_Online.Properties.Resources.Anel_2_0;
-            this.btnAneis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAneis.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAneis.Location = new System.Drawing.Point(814, 12);
-            this.btnAneis.Name = "btnAneis";
-            this.btnAneis.Size = new System.Drawing.Size(370, 330);
-            this.btnAneis.TabIndex = 7;
-            this.btnAneis.UseVisualStyleBackColor = false;
-            this.btnAneis.Click += new System.EventHandler(this.btnAneis_Click);
-            // 
-            // btnColares
-            // 
-            this.btnColares.BackColor = System.Drawing.Color.White;
-            this.btnColares.BackgroundImage = global::Loja_Online.Properties.Resources.Colar_2_0;
-            this.btnColares.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnColares.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnColares.Location = new System.Drawing.Point(409, 12);
-            this.btnColares.Name = "btnColares";
-            this.btnColares.Size = new System.Drawing.Size(370, 330);
-            this.btnColares.TabIndex = 6;
-            this.btnColares.UseVisualStyleBackColor = false;
-            this.btnColares.Click += new System.EventHandler(this.btnColares_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
@@ -235,19 +218,18 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnMas;
-        private System.Windows.Forms.Button btnRelogios;
-        private System.Windows.Forms.Button btnColares;
-        private System.Windows.Forms.Button btnAneis;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Panel panel2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnColares;
+        private System.Windows.Forms.Button btnAneis;
+        private System.Windows.Forms.Button btnRelogios;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

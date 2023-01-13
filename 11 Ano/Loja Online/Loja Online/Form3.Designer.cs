@@ -34,8 +34,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPedidos = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnRelogios = new System.Windows.Forms.Button();
+            this.btnAneis = new System.Windows.Forms.Button();
+            this.btnColares = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -112,26 +118,96 @@
             this.btnPedidos.UseVisualStyleBackColor = true;
             this.btnPedidos.Click += new System.EventHandler(this.btnPedidos_Click);
             // 
-            // groupBox1
+            // panel2
             // 
-            this.groupBox1.Location = new System.Drawing.Point(23, 97);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1191, 438);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
+            this.panel2.AutoSize = true;
+            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.btnRelogios);
+            this.panel2.Controls.Add(this.btnAneis);
+            this.panel2.Controls.Add(this.btnColares);
+            this.panel2.Location = new System.Drawing.Point(0, 107);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1389, 352);
+            this.panel2.TabIndex = 11;
+            // 
+            // btnRelogios
+            // 
+            this.btnRelogios.BackColor = System.Drawing.Color.White;
+            this.btnRelogios.BackgroundImage = global::Loja_Online.Properties.Resources.Relógio_2_0;
+            this.btnRelogios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRelogios.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelogios.Location = new System.Drawing.Point(9, 12);
+            this.btnRelogios.Name = "btnRelogios";
+            this.btnRelogios.Size = new System.Drawing.Size(370, 330);
+            this.btnRelogios.TabIndex = 5;
+            this.btnRelogios.UseVisualStyleBackColor = false;
+            // 
+            // btnAneis
+            // 
+            this.btnAneis.BackColor = System.Drawing.Color.White;
+            this.btnAneis.BackgroundImage = global::Loja_Online.Properties.Resources.Anel_2_0;
+            this.btnAneis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAneis.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAneis.Location = new System.Drawing.Point(814, 12);
+            this.btnAneis.Name = "btnAneis";
+            this.btnAneis.Size = new System.Drawing.Size(370, 330);
+            this.btnAneis.TabIndex = 7;
+            this.btnAneis.UseVisualStyleBackColor = false;
+            this.btnAneis.Click += new System.EventHandler(this.btnAneis_Click);
+            // 
+            // btnColares
+            // 
+            this.btnColares.BackColor = System.Drawing.Color.White;
+            this.btnColares.BackgroundImage = global::Loja_Online.Properties.Resources.Colar_2_0;
+            this.btnColares.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnColares.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColares.Location = new System.Drawing.Point(409, 12);
+            this.btnColares.Name = "btnColares";
+            this.btnColares.Size = new System.Drawing.Size(370, 330);
+            this.btnColares.TabIndex = 6;
+            this.btnColares.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Red;
+            this.button5.Location = new System.Drawing.Point(201, 278);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(131, 43);
+            this.button5.TabIndex = 16;
+            this.button5.Text = "REMOVER STOCK";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button6.Location = new System.Drawing.Point(47, 278);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(131, 43);
+            this.button6.TabIndex = 15;
+            this.button6.Text = "ADICIONAR STOCK";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1220, 594);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.groupBox1);
             this.Name = "Form3";
             this.Text = "Form3";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -142,6 +218,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnPedidos;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnRelogios;
+        private System.Windows.Forms.Button btnAneis;
+        private System.Windows.Forms.Button btnColares;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }

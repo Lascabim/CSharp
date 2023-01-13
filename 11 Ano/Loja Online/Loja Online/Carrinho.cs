@@ -79,7 +79,7 @@ namespace Loja_Online
                         AnelC++;
                     }
 
-                    MessageBox.Show(Item);
+                    //MessageBox.Show(Item);
                     ItemL = Item.Length;
 
                     //GETPRICE
@@ -147,17 +147,16 @@ namespace Loja_Online
             MessageBox.Show("Carrinho Limpo");
         }
 
-        private string getStockData()
+        private void refreshStock()
         {
             string tempPath = System.IO.Path.GetTempPath();
-            string filepath = tempPath + "/pedidos.txt";
-
-            string RTValue;
+            string filepath = tempPath + "/stock.txt";
 
             string RelogioS, ColarS, AnelS;
 
-            StreamReader sr;
-            sr = new StreamReader(filepath);
+            double[] ItemSArray = new double[3];
+
+            StreamReader sr = new StreamReader(filepath);
 
             using (sr)
             {
@@ -192,16 +191,36 @@ namespace Loja_Online
                     AnelS = rawline.Substring(indexPause2 + 1, AnelL);
                     //MessageBox.Show(AnelS);
 
-                    //RTValue = RelogioS
+                    ItemSArray[0] = Convert.ToDouble(RelogioS);
+                    ItemSArray[1] = Convert.ToDouble(ColarS);
+                    ItemSArray[2]= Convert.ToDouble(AnelS);
                 }
             }
 
             sr.Close();
-        }
 
-        private void refreshStock(int RelogioC, int ColarC, int )
-        {
+            /*
+            foreach(double i in ItemSArray)
+            {
+                MessageBox.Show(i.ToString());
+            }
+            */
 
+            StreamWriter sw = new StreamWriter(filepath);
+
+            using (sw)
+            {
+
+                ItemSArray[0] = ItemSArray[0] - RelogioC;
+                ItemSArray[1] = ItemSArray[1] - ColarC;
+                ItemSArray[2] = ItemSArray[2] - AnelC;
+
+                sw.WriteLine(ItemSArray[0] + "|" + ItemSArray[1] + "|" + ItemSArray[2] + "|");
+
+            }
+
+            sw.Close();
+            
         }
 
         private void FinalPrice(double percent)
@@ -248,12 +267,11 @@ namespace Loja_Online
             if(moradaIN.Length > 6)
             {
                 MessageBox.Show("Produto enviado com sucesso!");
+                refreshStock();
                 cleanCart();
 
-                refreshStock(RelogioC, ColarC, AnelC);
-
                 this.Hide();
-                var Forms1 = new Form1();
+                var Forms1 = new Form1("LC");
                 Forms1.Show();
             }
             else
@@ -282,7 +300,7 @@ namespace Loja_Online
         {
             this.Close();
 
-            var Forms1 = new Form1();
+            var Forms1 = new Form1("");
             Forms1.Show();
         }
 
@@ -291,7 +309,7 @@ namespace Loja_Online
             cleanCart();
 
             this.Hide();
-            var Forms1 = new Form1();
+            var Forms1 = new Form1("LC");
             Forms1.Show();
         }
 

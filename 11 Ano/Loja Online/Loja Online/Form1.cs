@@ -18,13 +18,21 @@ namespace Loja_Online
     public partial class Form1 : Form
     {
         static string actualType = "M";
-
-        public Form1()
+        static double RelogioT = 0, ColarT = 0, AnelT = 0;
+        public Form1(string LC)
         {
             InitializeComponent();
 
+            //MessageBox.Show(LC);
+
+            if(LC == "LC")
+            {
+                RelogioT = 0; 
+                ColarT = 0; 
+                AnelT = 0;
+            }
+
             panel2.Visible = true;
-            btnMas.BackColor = Color.White;
 
             string tempPath = System.IO.Path.GetTempPath();
             string filepathS = tempPath + "/stock.txt";
@@ -89,36 +97,36 @@ namespace Loja_Online
                         // GET RELOGIOS
                         RelogioS = rawline.Substring(0, indexPause);
                         RelogioL = RelogioS.Length;
-                        //MessageBox.Show(RelogioS);
 
                         //GET COLARS
                         ColarL = (indexPause2 - indexPause) - 1;
                         ColarS = rawline.Substring(indexPause + 1 , ColarL);
-                        //MessageBox.Show(ColarS);
 
                         //GET ANELS
                         AnelL = (indexPause3 - indexPause2) - 1;
                         AnelS = rawline.Substring(indexPause2 + 1 , AnelL);
-                        //MessageBox.Show(AnelS);
 
                         if (item == "Relogio")
                         {
-                            if(Convert.ToDouble(RelogioS) > 0)
+                            if((Convert.ToDouble(RelogioS) - RelogioT) > 0)
                             {
+                                RelogioT++;
                                 readyTG = true;
                             }
                         }
                         else if (item == "Colar")
                         {
-                            if (Convert.ToDouble(ColarS) > 0)
+                            if ((Convert.ToDouble(ColarS) - ColarT) > 0)
                             {
+                                ColarT++;
                                 readyTG = true;
                             }
                         }
                         else if (item == "Anel")
                         {
-                            if (Convert.ToDouble(AnelS) > 0)
+                            if ((Convert.ToDouble(AnelS) - AnelT) > 0)
                             {
+                                AnelT++;
                                 readyTG = true;
                             }
                         }
@@ -183,8 +191,6 @@ namespace Loja_Online
         {
             if (actualType == "F")
             {
-                //btnFem.BackColor = Color.Transparent;
-                btnMas.BackColor = Color.White;
                 actualType = "M";
             }
         }
@@ -194,8 +200,6 @@ namespace Loja_Online
 
             if (actualType == "M")
             {
-                btnMas.BackColor = Color.Transparent;
-                //btnFem.BackColor = Color.White;
                 actualType = "F";
             }
         }
@@ -208,20 +212,6 @@ namespace Loja_Online
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            bool stockAvailable = checkStock("Relogio");
-            if(stockAvailable)
-            {
-                sendData("Relogio", "50");
-                MessageBox.Show("Produto adicionado ao carrinho!");
-            }
-            else
-            {
-                MessageBox.Show("Produto sem stock!");
-            }
         }
 
         private void btnAneis_Click(object sender, EventArgs e)
@@ -262,6 +252,20 @@ namespace Loja_Online
             }
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            bool stockAvailable = checkStock("Relogio");
+            if (stockAvailable)
+            {
+                sendData("Relogio", "50");
+                MessageBox.Show("Produto adicionado ao carrinho!");
+            }
+            else
+            {
+                MessageBox.Show("Produto sem stock!");
+            }
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
             string tempPath = System.IO.Path.GetTempPath();
@@ -277,7 +281,6 @@ namespace Loja_Online
             if (info.Length == 0)
             {
                 MessageBox.Show("Carrinho vazio!");
-
             }
             else
             {

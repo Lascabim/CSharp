@@ -29,8 +29,13 @@ namespace Loja_Online
         {
             this.Hide();
 
-            var Forms1 = new Form1();
+            var Forms1 = new Form1("");
             Forms1.Show();
+        }
+
+        private void btnAneis_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
