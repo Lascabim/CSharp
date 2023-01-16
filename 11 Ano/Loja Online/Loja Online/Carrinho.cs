@@ -199,13 +199,6 @@ namespace Loja_Online
 
             sr.Close();
 
-            /*
-            foreach(double i in ItemSArray)
-            {
-                MessageBox.Show(i.ToString());
-            }
-            */
-
             StreamWriter sw = new StreamWriter(filepath);
 
             using (sw)

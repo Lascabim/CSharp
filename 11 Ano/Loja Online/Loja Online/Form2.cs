@@ -130,7 +130,6 @@ namespace Loja_Online
                         {
                             if (eitem && epreco && emorada && edate && eid)
                             {
-                                //wt.WriteLine("Items:{0}|{1}|{2}|{3}|{4}", Item, Preco, Morada, Date, ID);
                                 dataGridView1.Rows.Add(ID, Item, Preco, Morada, Date, Date);
                             }
                             else
@@ -145,10 +144,6 @@ namespace Loja_Online
                     {
                         MessageBox.Show("ID não encontrado!");
                     }
-                    //else if (readyTORemove == true)
-                    //{
-                        //GetData("nulo");
-                    //}
                 srr.Close();
             }
 
