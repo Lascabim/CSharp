@@ -18,7 +18,7 @@ namespace Loja_Online
         {
 
             string tempPath = System.IO.Path.GetTempPath();
-            string filepath = tempPath + "/pedidos.txt";
+            string filepath = tempPath + "/pedidosC.txt";
 
 
             if (!File.Exists(filepath))

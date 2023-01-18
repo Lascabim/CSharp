@@ -19,11 +19,10 @@ namespace Loja_Online
     {
         static string actualType = "M";
         static double RelogioT = 0, ColarT = 0, AnelT = 0;
+        
         public Form1(string LC)
         {
             InitializeComponent();
-
-            //MessageBox.Show(LC);
 
             if(LC == "LC")
             {

@@ -134,17 +134,28 @@ namespace Loja_Online
 
         private void cleanCart()
         {
+            confirmPurchase();
+
             RelogioC = 0;
             ColarC = 0; 
             AnelC = 0;
 
             string tempPath = System.IO.Path.GetTempPath();
             string filepath = tempPath + "/pedidos.txt";
-
+            
             File.Delete(filepath);
             File.Create(filepath);
 
             MessageBox.Show("Carrinho Limpo");
+        }
+
+        private void confirmPurchase()
+        {
+            string tempPath = System.IO.Path.GetTempPath();
+            string filepath = tempPath + "/pedidos.txt";
+            string filepathC = tempPath + "/pedidosC.txt";
+
+            File.Copy(filepath, filepathC, true);
         }
 
         private void refreshStock()
