@@ -1,0 +1,12 @@
+C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\bin\Debug\GestaoStocks.exe.config
+C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\bin\Debug\GestaoStocks.exe
+C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\bin\Debug\GestaoStocks.pdb
+C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\obj\Debug\GestaoStocks.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\obj\Debug\GestaoStocks.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\obj\Debug\GestaoStocks.Properties.Resources.resources
+C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\obj\Debug\GestaoStocks.csproj.GenerateResource.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\obj\Debug\GestaoStocks.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\obj\Debug\GestaoStocks.exe
+C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\obj\Debug\GestaoStocks.pdb
+C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\obj\Debug\GestaoStocks.AddProduct.resources
+C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\obj\Debug\GestaoStocks.Stocks.resources

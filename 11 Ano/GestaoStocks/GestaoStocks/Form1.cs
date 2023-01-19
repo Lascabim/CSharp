@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace GestaoStocks
 {
-    public partial class Form1 : Form
+    public partial class Stocks : Form
     {
-        public Form1()
+        public Stocks()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var AddP = new AddProduct();
+            AddP.Show();
         }
     }
 }
