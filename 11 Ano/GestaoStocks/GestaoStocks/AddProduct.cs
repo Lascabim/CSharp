@@ -61,13 +61,31 @@ namespace GestaoStocks
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string nomeProduto = Interaction.InputBox("Nome do produto a adicionar: ").ToLower();
+            string nomeProduto = Interaction.InputBox("Nome do produto a adicionar: ");
             string precoProduto = Interaction.InputBox("Preço do " + nomeProduto + ": ").ToLower();
             string quantidadeProduto = Interaction.InputBox("Quantidade do " + nomeProduto + ": ").ToLower();
+            sc.AddProducts(nomeProduto, precoProduto, quantidadeProduto);
+            GetProducts();
         }
+
         private void AddProduct_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedCells.Count > 0)
+            {
+                int selectedrowindex = dataGridView1.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
+
+                string cellValue = Convert.ToString(selectedRow.Cells["nome"].Value);
+                sc.RemoveProduct(cellValue);
+                MessageBox.Show("A");
+                GetProducts();
+                MessageBox.Show("B");
+            }
         }
     }
 }
