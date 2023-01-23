@@ -27,74 +27,80 @@ namespace GestaoStocks
 
         public void RemoveProduct(string productName)
         {
-
-            int countLine = File.ReadAllLines(filepathPM).Length;
-            //MessageBox.Show(countLine.ToString());
-
-            string[] linhasAGuardar = new string[countLine];
-
-            StreamReader sr = new StreamReader(filepathPM);
-
-            int x = 0;
-
-            using (sr)
+            if(File.Exists(filepathPM))
             {
-                while (sr.Peek() > -1)
+                int countLine = File.ReadAllLines(filepathPM).Length;
+                //MessageBox.Show(countLine.ToString());
+
+                string[] linhasAGuardar = new string[countLine];
+
+                StreamReader sr = new StreamReader(filepathPM);
+
+                int x = 0;
+
+                using (sr)
                 {
-                    string nomeF = "", precoF = "", quantidadeF = "";
-
-                    int indexPause = 0;
-                    int indexPause2 = 0;
-                    int indexPause3 = 0;
-
-                    string rawline = sr.ReadLine();
-
-                    //GET
-
-                    indexPause = rawline.IndexOf('|', indexPause);
-                    indexPause2 = rawline.IndexOf('|', indexPause + 1);
-                    indexPause3 = rawline.IndexOf('|', indexPause2 + 1);
-
-                    // GET NOME
-                    nomeF = rawline.Substring(0, indexPause);
-                    int nomeL = nomeF.Length;
-                    //MessageBox.Show(nomeF);
-
-
-                    // GET PRECO
-                    precoF = rawline.Substring(indexPause + 1, indexPause2 - nomeL - 1);
-                    int precoL = precoF.Length;
-                    //MessageBox.Show(precoF);
-
-                    // GET QUANTIDADE
-                    quantidadeF = rawline.Substring(indexPause + 1, indexPause2 - nomeL - precoL);
-                    int quantidadeL = quantidadeF.Length;
-                    //MessageBox.Show(quantidadeF);
-
-                    if(nomeF != productName)
+                    while (sr.Peek() > -1)
                     {
-                        linhasAGuardar[x] = rawline;
-                        x++;
-                    }
+                        string nomeF = "", precoF = "", quantidadeF = "";
 
+                        int indexPause = 0;
+                        int indexPause2 = 0;
+                        int indexPause3 = 0;
+
+                        string rawline = sr.ReadLine();
+
+                        //GET
+
+                        indexPause = rawline.IndexOf('|', indexPause);
+                        indexPause2 = rawline.IndexOf('|', indexPause + 1);
+                        indexPause3 = rawline.IndexOf('|', indexPause2 + 1);
+
+                        // GET NOME
+                        nomeF = rawline.Substring(0, indexPause);
+                        int nomeL = nomeF.Length;
+                        //MessageBox.Show(nomeF);
+
+
+                        // GET PRECO
+                        precoF = rawline.Substring(indexPause + 1, indexPause2 - nomeL - 1);
+                        int precoL = precoF.Length;
+                        //MessageBox.Show(precoF);
+
+                        // GET QUANTIDADE
+                        quantidadeF = rawline.Substring(indexPause + 1, indexPause2 - nomeL - precoL);
+                        int quantidadeL = quantidadeF.Length;
+                        //MessageBox.Show(quantidadeF);
+
+                        if(nomeF != productName)
+                        {
+                            linhasAGuardar[x] = rawline;
+                            x++;
+                        }
+
+                    }
+                }
+
+                sr.Close();
+
+                File.Delete(filepathPM);
+
+                foreach(string Linha in linhasAGuardar)
+                {
+                    if(Linha != null)
+                    {
+                        FileStream file = new FileStream(filepathPM, FileMode.Append, FileAccess.Write);
+
+                        using (StreamWriter writetext = new StreamWriter(file))
+                        {
+                            writetext.WriteLine(Linha);
+                        }
+                    }
                 }
             }
-
-            sr.Close();
-
-            File.Delete(filepathPM);
-
-            foreach(string Linha in linhasAGuardar)
+            else
             {
-                if(Linha != null)
-                {
-                    FileStream file = new FileStream(filepathPM, FileMode.Append, FileAccess.Write);
-
-                    using (StreamWriter writetext = new StreamWriter(file))
-                    {
-                        writetext.WriteLine(Linha);
-                    }
-                }
+                MessageBox.Show("Não há produtos a remover!");
             }
         }
 
@@ -105,7 +111,11 @@ namespace GestaoStocks
 
             if (File.Exists(filepathPM))
             {
-                ready = true;
+                int countLine = File.ReadAllLines(filepathPM).Length;
+                if(countLine > 0)
+                {
+                    ready = true;
+                }
             }
 
             return ready;

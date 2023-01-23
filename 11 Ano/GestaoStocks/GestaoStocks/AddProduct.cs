@@ -21,13 +21,19 @@ namespace GestaoStocks
         public AddProduct()
         {
             InitializeComponent();
+            CheckVisiblePanels();  
+        }
+
+        private void CheckVisiblePanels()
+        {
             noProducts.Visible = false;
 
             bool hasProducts = sc.ProductManager();
-            
-            if(hasProducts)
+
+            if (hasProducts)
             {
                 GetProducts();
+                dataGridView1.Visible = true;
             }
             else
             {
@@ -38,6 +44,8 @@ namespace GestaoStocks
 
         private void GetProducts()
         {
+            dataGridView1.Rows.Clear();
+
             using (StreamReader sr = new StreamReader(filepathPM))
             {
                 while (sr.Peek() > -1)
@@ -64,8 +72,17 @@ namespace GestaoStocks
             string nomeProduto = Interaction.InputBox("Nome do produto a adicionar: ");
             string precoProduto = Interaction.InputBox("Preço do " + nomeProduto + ": ").ToLower();
             string quantidadeProduto = Interaction.InputBox("Quantidade do " + nomeProduto + ": ").ToLower();
-            sc.AddProducts(nomeProduto, precoProduto, quantidadeProduto);
-            GetProducts();
+
+            if(nomeProduto != "" && precoProduto != "" && quantidadeProduto != "")
+            {
+                sc.AddProducts(nomeProduto, precoProduto, quantidadeProduto);
+                CheckVisiblePanels();
+            }
+            else
+            {
+                MessageBox.Show("Introduz valores válidos!");
+            }
+
         }
 
         private void AddProduct_Load(object sender, EventArgs e)
@@ -81,11 +98,23 @@ namespace GestaoStocks
                 DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
 
                 string cellValue = Convert.ToString(selectedRow.Cells["nome"].Value);
-                sc.RemoveProduct(cellValue);
-                MessageBox.Show("A");
-                GetProducts();
-                MessageBox.Show("B");
+
+                DialogResult confirmation = MessageBox.Show("Do you want to remove this product?", "Remove Product", MessageBoxButtons.YesNo);
+                if (confirmation == DialogResult.Yes)
+                {
+                    sc.RemoveProduct(cellValue);
+                    CheckVisiblePanels();
+                }
+                else if (confirmation == DialogResult.No)
+                {
+                    MessageBox.Show("Operação Canclada");
+                }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
