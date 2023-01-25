@@ -78,11 +78,6 @@ namespace GestaoStocks
                 sc.AddProducts(nomeProduto, precoProduto, quantidadeProduto);
                 CheckVisiblePanels();
             }
-            else
-            {
-                MessageBox.Show("Introduz valores válidos!");
-            }
-
         }
 
         private void AddProduct_Load(object sender, EventArgs e)
@@ -99,21 +94,42 @@ namespace GestaoStocks
 
                 string cellValue = Convert.ToString(selectedRow.Cells["nome"].Value);
 
-                DialogResult confirmation = MessageBox.Show("Do you want to remove this product?", "Remove Product", MessageBoxButtons.YesNo);
-                if (confirmation == DialogResult.Yes)
+                if (cellValue != "")
                 {
-                    sc.RemoveProduct(cellValue);
-                    CheckVisiblePanels();
+                    DialogResult confirmation = MessageBox.Show("Pretendes remover o produto '" + cellValue + "' ?", "Remover Produto", MessageBoxButtons.YesNo);
+                    if (confirmation == DialogResult.Yes)
+                    {
+                        sc.RemoveProduct(cellValue);
+                        CheckVisiblePanels();
+                    }
                 }
-                else if (confirmation == DialogResult.No)
+                else
                 {
-                    MessageBox.Show("Operação Canclada");
+                    MessageBox.Show("Tens que selecionar um produto!");
                 }
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.SelectedCells.Count > 0)
+            {
+                int selectedrowindex = dataGridView1.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
+
+                string cellValue = Convert.ToString(selectedRow.Cells["nome"].Value);
+
+                DialogResult confirmation = MessageBox.Show("Pretendes editar o produto '" + cellValue +"' ?", "Editar Produto", MessageBoxButtons.YesNo);
+                if (confirmation == DialogResult.Yes)
+                {
+                    sc.EditProduct(cellValue);
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
 
         }
     }

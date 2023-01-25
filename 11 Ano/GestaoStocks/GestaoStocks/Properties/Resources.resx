@@ -118,19 +118,40 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Add Icon White Border Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add Icon White Border Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit White SM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit White SM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Tablet Armazem" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tablet Armazem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Garbage Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Garbage Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Edit White SM Border Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit White SM Border Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit White SM Border Black1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit White SM Border Black1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Add Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Add Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Garbage Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Garbage Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Edit Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Edit Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add Icon White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add Icon White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Garbage Icon White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Garbage Icon White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Turn BACK White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Turn BACK White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

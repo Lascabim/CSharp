@@ -73,6 +73,26 @@ namespace GestaoStocks.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Add_Icon_White {
+            get {
+                object obj = ResourceManager.GetObject("Add Icon White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_Icon_White_Border_Black {
+            get {
+                object obj = ResourceManager.GetObject("Add Icon White Border Black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Edit_Icon {
             get {
                 object obj = ResourceManager.GetObject("Edit Icon", resourceCulture);
@@ -83,9 +103,49 @@ namespace GestaoStocks.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Edit_White_SM {
+            get {
+                object obj = ResourceManager.GetObject("Edit White SM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Edit_White_SM_Border_Black {
+            get {
+                object obj = ResourceManager.GetObject("Edit White SM Border Black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Edit_White_SM_Border_Black1 {
+            get {
+                object obj = ResourceManager.GetObject("Edit White SM Border Black1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Garbage_Icon {
             get {
                 object obj = ResourceManager.GetObject("Garbage Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Garbage_Icon_White {
+            get {
+                object obj = ResourceManager.GetObject("Garbage Icon White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +166,16 @@ namespace GestaoStocks.Properties {
         internal static System.Drawing.Bitmap Tablet_Armazem {
             get {
                 object obj = ResourceManager.GetObject("Tablet Armazem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Turn_BACK_White {
+            get {
+                object obj = ResourceManager.GetObject("Turn BACK White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

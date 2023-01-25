@@ -100,5 +100,26 @@
   <ItemGroup>
     <None Include="Resources\images.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit White SM Border Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit White SM Border Black1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Icon White Border Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Icon White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Garbage Icon White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit White SM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Turn BACK White.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

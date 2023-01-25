@@ -17,12 +17,58 @@ namespace GestaoStocks
 
         public void AddProducts(string nome, string preco, string quantidade)
         {
-            FileStream file = new FileStream(filepathPM, FileMode.Append, FileAccess.Write);
+            bool AllDigits = false;
 
-            using (StreamWriter writetext = new StreamWriter(file))
+            bool PrecoDigit = true, QuantidadeDigit = true;
+
+            foreach (char c in preco)
             {
-                writetext.WriteLine(nome + "|" + preco + "|" + quantidade+ "|");
+                if (c < '0' || c > '9')
+                {
+                    PrecoDigit = false;
+                }
             }
+
+            foreach (char c in quantidade)
+            {
+                if (c < '0' || c > '9')
+                {
+                    QuantidadeDigit = false;
+                }
+            }
+
+            if(PrecoDigit && QuantidadeDigit)
+            {
+                AllDigits = true;
+            }
+
+            if (AllDigits)
+            {
+                //bool productIn = CheckIfProductExists();
+
+                //if(!productIn)
+                //{
+                    FileStream file = new FileStream(filepathPM, FileMode.Append, FileAccess.Write);
+
+                    using (StreamWriter writetext = new StreamWriter(file))
+                    {
+                        writetext.WriteLine(nome + "|" + preco + "|" + quantidade + "|");
+                    }
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Este produto já se encontra registado");
+                //}
+            }
+            else
+            {
+                MessageBox.Show("Tens que introduzir apenas números na quantia e no preço!");
+            }
+        }
+
+        public void EditProduct(string productName)
+        {
+
         }
 
         public void RemoveProduct(string productName)
