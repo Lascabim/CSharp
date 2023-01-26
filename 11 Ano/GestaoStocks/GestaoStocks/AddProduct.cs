@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualBasic;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualBasic;
 using System.Windows.Forms;
 
 namespace GestaoStocks
@@ -117,12 +117,16 @@ namespace GestaoStocks
                 int selectedrowindex = dataGridView1.SelectedCells[0].RowIndex;
                 DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
 
-                string cellValue = Convert.ToString(selectedRow.Cells["nome"].Value);
+                string nomeProd = Convert.ToString(selectedRow.Cells["nome"].Value);
+                string precoProd = Convert.ToString(selectedRow.Cells["preco"].Value);
+                string quantidadeProd = Convert.ToString(selectedRow.Cells["quantidade"].Value);
 
-                DialogResult confirmation = MessageBox.Show("Pretendes editar o produto '" + cellValue +"' ?", "Editar Produto", MessageBoxButtons.YesNo);
+                DialogResult confirmation = MessageBox.Show("Pretendes editar o produto '" + nomeProd +"' ?", "Editar Produto", MessageBoxButtons.YesNo);
                 if (confirmation == DialogResult.Yes)
                 {
-                    sc.EditProduct(cellValue);
+                    this.Hide();
+                    var EditF = new EditForms(nomeProd, precoProd, quantidadeProd);
+                    EditF.Show();
                 }
             }
         }
@@ -130,6 +134,10 @@ namespace GestaoStocks
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

@@ -10,3 +10,4 @@ C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\obj\Debug\Gestao
 C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\obj\Debug\GestaoStocks.pdb
 C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\obj\Debug\GestaoStocks.AddProduct.resources
 C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\obj\Debug\GestaoStocks.Stocks.resources
+C:\Users\Bandeira\Documents\VS\11 Ano\GestaoStocks\GestaoStocks\obj\Debug\GestaoStocks.EditForms.resources
