@@ -12,12 +12,22 @@ namespace GestaoStocks
 {
     public partial class EditForms : Form
     {
+        static string tempPath = System.IO.Path.GetTempPath();
+        static string filepathPM = tempPath + "/SMprodutosM.txt";
+        static StockClass sc = new StockClass();
+
         public EditForms(string nome, string preco, string quantidade)
         {
             InitializeComponent();
             label1.Text = nome;
             label3.Text = "Preço Atual = " + preco;
             label4.Text = "Quantidade Atual = " + quantidade + " unidades";
+
+            quantidadeT.Text = quantidade;
+            quantidadeT.Visible = false;
+
+            precoT.Text = preco;
+            precoT.Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -62,12 +72,24 @@ namespace GestaoStocks
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double precoNovo = Convert.ToDouble(textBox1.Text);
-            double quantidadeNova = Convert.ToDouble(textBox2.Text);
+            int LengthprecoAtual = (precoT.Text.Length);
+            string precoAtual = (precoT.Text);
+            string precoAtualF = precoAtual.Substring(0, LengthprecoAtual - 2);
+            double precoNovo = Convert.ToDouble(precoAtualF);
             
-            if(precoNovo != nome)
+            double quantidadeNova = Convert.ToDouble(quantidadeT.Text);
+
+            if(textBox1.Text != "" && textBox1.Text != null && textBox2.Text != "" && textBox2.Text != "")
             {
-                MessageBox.Show("ESTOU AQUI");
+                DialogResult confirmation = MessageBox.Show("Pretendes confirmar a edição do produto?", "Editar Produto", MessageBoxButtons.YesNo);
+                if (confirmation == DialogResult.Yes)
+                {
+                    sc.EditProduct(textBox1.Text, textBox2.Text);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Introduz valores válidos !");
             }
         }
     }

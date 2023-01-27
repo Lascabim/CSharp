@@ -38,8 +38,8 @@
             this.quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noProducts = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -161,20 +161,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(691, 332);
             this.panel1.TabIndex = 7;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BackgroundImage = global::GestaoStocks.Properties.Resources.Turn_BACK_White;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(325, 148);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(40, 37);
-            this.button5.TabIndex = 9;
-            this.button5.UseVisualStyleBackColor = false;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button6
             // 
@@ -189,6 +176,21 @@
             this.button6.Size = new System.Drawing.Size(40, 37);
             this.button6.TabIndex = 10;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackgroundImage = global::GestaoStocks.Properties.Resources.Turn_BACK_White;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(325, 148);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(40, 37);
+            this.button5.TabIndex = 9;
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // AddProduct
             // 

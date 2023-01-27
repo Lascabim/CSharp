@@ -66,9 +66,10 @@ namespace GestaoStocks
             }
         }
 
-        public void EditProduct(string productName)
+        public void EditProduct(string newPrice, string newQuantity)
         {
-
+            MessageBox.Show(newPrice.ToString());
+            MessageBox.Show(newQuantity.ToString());
         }
 
         public void RemoveProduct(string productName)

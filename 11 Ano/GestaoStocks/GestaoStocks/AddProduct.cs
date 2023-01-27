@@ -131,12 +131,20 @@ namespace GestaoStocks
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            this.Hide();
+
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            var f1 = new Stocks();
+            f1.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
