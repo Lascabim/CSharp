@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.precoT = new System.Windows.Forms.Label();
+            this.quantidadeT = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -38,8 +40,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.quantidadeT = new System.Windows.Forms.Label();
-            this.precoT = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,9 +62,29 @@
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(461, 332);
+            this.panel1.Size = new System.Drawing.Size(461, 298);
             this.panel1.TabIndex = 8;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // precoT
+            // 
+            this.precoT.AutoSize = true;
+            this.precoT.ForeColor = System.Drawing.Color.Transparent;
+            this.precoT.Location = new System.Drawing.Point(4, 253);
+            this.precoT.Name = "precoT";
+            this.precoT.Size = new System.Drawing.Size(41, 13);
+            this.precoT.TabIndex = 17;
+            this.precoT.Text = "label7";
+            // 
+            // quantidadeT
+            // 
+            this.quantidadeT.AutoSize = true;
+            this.quantidadeT.ForeColor = System.Drawing.Color.Transparent;
+            this.quantidadeT.Location = new System.Drawing.Point(4, 264);
+            this.quantidadeT.Name = "quantidadeT";
+            this.quantidadeT.Size = new System.Drawing.Size(41, 13);
+            this.quantidadeT.TabIndex = 16;
+            this.quantidadeT.Text = "label6";
             // 
             // button1
             // 
@@ -179,26 +199,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Produto";
             // 
-            // quantidadeT
-            // 
-            this.quantidadeT.AutoSize = true;
-            this.quantidadeT.ForeColor = System.Drawing.Color.Transparent;
-            this.quantidadeT.Location = new System.Drawing.Point(4, 264);
-            this.quantidadeT.Name = "quantidadeT";
-            this.quantidadeT.Size = new System.Drawing.Size(41, 13);
-            this.quantidadeT.TabIndex = 16;
-            this.quantidadeT.Text = "label6";
-            // 
-            // precoT
-            // 
-            this.precoT.AutoSize = true;
-            this.precoT.ForeColor = System.Drawing.Color.Transparent;
-            this.precoT.Location = new System.Drawing.Point(4, 253);
-            this.precoT.Name = "precoT";
-            this.precoT.Size = new System.Drawing.Size(41, 13);
-            this.precoT.TabIndex = 17;
-            this.precoT.Text = "label7";
-            // 
             // EditForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -209,7 +209,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "EditForms";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EditForms";
+            this.Text = "Editar Produto";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

@@ -84,7 +84,10 @@ namespace GestaoStocks
                 DialogResult confirmation = MessageBox.Show("Pretendes confirmar a edição do produto?", "Editar Produto", MessageBoxButtons.YesNo);
                 if (confirmation == DialogResult.Yes)
                 {
-                    sc.EditProduct(textBox1.Text, textBox2.Text);
+                    string nP = textBox1.Text;
+                    string nQ = textBox2.Text;
+                    string lA = label1.Text;
+                    sc.EditProduct(nP, nQ, lA);
                 }
             }
             else

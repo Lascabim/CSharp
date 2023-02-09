@@ -16,6 +16,8 @@ namespace GestaoStocks
     {
         static string tempPath = System.IO.Path.GetTempPath();
         static string filepathPM = tempPath + "/SMprodutosM.txt";
+        static string filepathSH = tempPath + "/SMhistoryM.txt";
+
         static StockClass sc = new StockClass();
 
         public AddProduct()
@@ -139,7 +141,6 @@ namespace GestaoStocks
         private void button6_Click(object sender, EventArgs e)
         {
             this.Hide();
-
             var f1 = new Stocks();
             f1.Show();
         }

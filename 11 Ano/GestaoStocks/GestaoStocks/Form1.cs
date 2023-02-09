@@ -23,5 +23,12 @@ namespace GestaoStocks
             var AddP = new AddProduct();
             AddP.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var Historico = new ProductHistory();
+            Historico.Show();
+        }
     }
 }

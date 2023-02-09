@@ -1,0 +1,8 @@
+C:\Users\Bandeira\Documents\VS\Tecla 2023\Tecla 2\Tecla 2\bin\Debug\Tecla 2.exe.config
+C:\Users\Bandeira\Documents\VS\Tecla 2023\Tecla 2\Tecla 2\bin\Debug\Tecla 2.exe
+C:\Users\Bandeira\Documents\VS\Tecla 2023\Tecla 2\Tecla 2\bin\Debug\Tecla 2.pdb
+C:\Users\Bandeira\Documents\VS\Tecla 2023\Tecla 2\Tecla 2\obj\Debug\Tecla 2.csproj.AssemblyReference.cache
+C:\Users\Bandeira\Documents\VS\Tecla 2023\Tecla 2\Tecla 2\obj\Debug\Tecla 2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bandeira\Documents\VS\Tecla 2023\Tecla 2\Tecla 2\obj\Debug\Tecla 2.csproj.CoreCompileInputs.cache
+C:\Users\Bandeira\Documents\VS\Tecla 2023\Tecla 2\Tecla 2\obj\Debug\Tecla 2.exe
+C:\Users\Bandeira\Documents\VS\Tecla 2023\Tecla 2\Tecla 2\obj\Debug\Tecla 2.pdb
