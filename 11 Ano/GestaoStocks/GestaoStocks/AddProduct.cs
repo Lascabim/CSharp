@@ -79,6 +79,7 @@ namespace GestaoStocks
             {
                 sc.AddProducts(nomeProduto, precoProduto, quantidadeProduto);
                 CheckVisiblePanels();
+                sc.UpdateHistory(Convert.ToDouble(quantidadeProduto) ,nomeProduto);
             }
         }
 

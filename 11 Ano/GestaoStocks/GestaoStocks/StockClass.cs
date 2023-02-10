@@ -232,7 +232,7 @@ namespace GestaoStocks
 
         public void RemoveHistory()
         {
-            string[] defaultHistoryLines = new string[3] { "colar|online|-25|", "anel|online|+3|", "relogio|online|-2|" };
+            string[] defaultHistoryLines = new string[3] { "Colar Ouro|online|-25|", "Anel de Rubi|online|+3|", "Relogio Rolex|online|-2|" };
 
             File.Delete(filepathSH);
 
@@ -248,6 +248,18 @@ namespace GestaoStocks
                     }
                 }
             }
+        }
+
+        public void UpdateHistory(double newQuantity, string Name)
+        {
+            string Linha = Convert.ToString(Name) + "|offline|" + Convert.ToString(newQuantity) + "|";
+            FileStream file = new FileStream(filepathSH, FileMode.Append, FileAccess.Write);
+
+            using (StreamWriter writetext = new StreamWriter(file))
+            {
+                writetext.WriteLine(Linha);
+            }
+
         }
     }
 }

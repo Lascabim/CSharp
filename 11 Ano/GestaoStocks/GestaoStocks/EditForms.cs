@@ -75,8 +75,8 @@ namespace GestaoStocks
             int LengthprecoAtual = (precoT.Text.Length);
             string precoAtual = (precoT.Text);
             string precoAtualF = precoAtual.Substring(0, LengthprecoAtual - 2);
+
             double precoNovo = Convert.ToDouble(precoAtualF);
-            
             double quantidadeNova = Convert.ToDouble(quantidadeT.Text);
 
             if(textBox1.Text != "" && textBox1.Text != null && textBox2.Text != "" && textBox2.Text != "")
@@ -88,6 +88,22 @@ namespace GestaoStocks
                     string nQ = textBox2.Text;
                     string lA = label1.Text;
                     sc.EditProduct(nP, nQ, lA);
+
+
+                    double oldQuantity = Convert.ToDouble(quantidadeT.Text);
+                    double newQuantity = Convert.ToDouble(nQ);
+                    double HnQ;
+
+                    if (newQuantity == oldQuantity)
+                    {
+                        HnQ = newQuantity;
+                    }
+                    else
+                    {
+                        HnQ = (newQuantity - oldQuantity);
+                    }
+
+                    sc.UpdateHistory(HnQ, lA);
                 }
             }
             else

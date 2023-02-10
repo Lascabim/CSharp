@@ -104,6 +104,7 @@
             this.Name = "Stocks";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestão de Stocks";
+            this.Load += new System.EventHandler(this.Stocks_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

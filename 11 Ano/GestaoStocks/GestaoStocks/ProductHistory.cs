@@ -28,44 +28,49 @@ namespace GestaoStocks
         public void GetStockHistory()
         {
             dataGridView1.Rows.Clear();
-            int numRows = dataGridView1.RowCount;
+            
+            int countLine = File.ReadAllLines(filepathSH).Length;
 
-            using (StreamReader sr = new StreamReader(filepathSH))
+            if (File.Exists(filepathSH))
             {
-                int x = 0;
-
-                while (sr.Peek() > -1)
+                using (StreamReader sr = new StreamReader(filepathSH))
                 {
-                    string nome, preco, quantidade;
-                    int indexPause = 0, indexPause2 = 0, indexPause3 = 0;
-                    string rawline = sr.ReadLine();
 
-                    indexPause = rawline.IndexOf('|', indexPause);
-                    indexPause2 = rawline.IndexOf('|', indexPause + 1);
-                    indexPause3 = rawline.IndexOf('|', indexPause2 + 1);
-
-                    nome = rawline.Substring(0, indexPause);
-                    preco = rawline.Substring(indexPause + 1, (indexPause2 - nome.Length) - 1);
-                    quantidade = rawline.Substring(indexPause2 + 1, (indexPause3 - nome.Length - preco.Length) - 2);
-
-                    string quantidadeType = quantidade.Substring(0, 1);
-
-                    if((numRows-x))
+                    while (sr.Peek() > -1)
                     {
+                        string nome, preco, quantidade;
+                        int indexPause = 0, indexPause2 = 0, indexPause3 = 0;
+                        string rawline = sr.ReadLine();
+
+                        indexPause = rawline.IndexOf('|', indexPause);
+                        indexPause2 = rawline.IndexOf('|', indexPause + 1);
+                        indexPause3 = rawline.IndexOf('|', indexPause2 + 1);
+
+                        nome = rawline.Substring(0, indexPause);
+                        preco = rawline.Substring(indexPause + 1, (indexPause2 - nome.Length) - 1);
+                        quantidade = rawline.Substring(indexPause2 + 1, (indexPause3 - nome.Length - preco.Length) - 2);
+
+                        string quantidadeType = quantidade.Substring(0, 1);
+
+                        /*
                         if (quantidadeType == "-")
                         {
-                            dataGridView1.Rows[i].DefaultCellStyle.ForeColor = Color.Red;
+                            dataGridView1.Rows[0].DefaultCellStyle.ForeColor = Color.Red;
                         }
 
                         if (quantidadeType == "+")
                         {
-                            dataGridView1.Rows[i].DefaultCellStyle.ForeColor = Color.Green;
+                            dataGridView1.Rows[0].DefaultCellStyle.ForeColor = Color.Green;
                         }
-                    }
+                        */
 
-                    dataGridView1.Rows.Add(nome, preco, quantidade);
-                    x++;
+                        dataGridView1.Rows.Add(nome, preco, quantidade);
+                    }
                 }
+            }
+            else 
+            {
+                sc.RemoveHistory();
             }
         }
 
@@ -87,7 +92,18 @@ namespace GestaoStocks
             if (confirmation == DialogResult.Yes)
             {
                 sc.RemoveHistory();
+                GetStockHistory();
             }
+        }
+
+        private void ProductHistory_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
