@@ -47,10 +47,13 @@ namespace GestaoStocks
             {
                FileStream file = new FileStream(filepathPM, FileMode.Append, FileAccess.Write);
 
-               using (StreamWriter writetext = new StreamWriter(file))
-               {
-                   writetext.WriteLine(nome + "|" + preco + "|" + quantidade + "|");
-               }
+                DateTime dateTime = DateTime.UtcNow.Date;
+                string dataAtual = dateTime.ToString("dd/MM/yyyy");
+
+                using (StreamWriter writetext = new StreamWriter(file))
+                {
+                   writetext.WriteLine(nome + "|" + preco + "|" + quantidade + "|" + dataAtual + "|");
+                }
             }
             else
             {
@@ -58,7 +61,7 @@ namespace GestaoStocks
             }
         }
 
-        public void EditProduct(string newPrice, string newQuantity, string Name)
+        public void EditProduct(string newPrice, string newQuantity, string Name, string CDate)
         {
             int countLine = File.ReadAllLines(filepathPM).Length;
 
@@ -72,11 +75,12 @@ namespace GestaoStocks
             {
                 while (sr.Peek() > -1)
                 {
-                    string nomeF = "", precoF = "", quantidadeF = "";
+                    string nomeF = "", precoF = "", quantidadeF = "", dateF = "";
 
                     int indexPause = 0;
                     int indexPause2 = 0;
                     int indexPause3 = 0;
+                    int indexPause4 = 0;
 
                     string rawline = sr.ReadLine();
 
@@ -84,6 +88,7 @@ namespace GestaoStocks
                     indexPause = rawline.IndexOf('|', indexPause);
                     indexPause2 = rawline.IndexOf('|', indexPause + 1);
                     indexPause3 = rawline.IndexOf('|', indexPause2 + 1);
+                    indexPause4 = rawline.IndexOf('|', indexPause3 + 1);
 
                     // GET NOME
                     nomeF = rawline.Substring(0, indexPause);
@@ -97,9 +102,15 @@ namespace GestaoStocks
                     quantidadeF = rawline.Substring(indexPause + 1, indexPause2 - nomeL - precoL);
                     int quantidadeL = quantidadeF.Length;
 
+                    // GET DATE
+                    dateF = rawline.Substring(indexPause3 + 1, indexPause4 - nomeL - precoL);
+                    MessageBox.Show(dateF);
+                    int dateL = quantidadeF.Length;
+
+
                     if (nomeF == Name)
                     {
-                        string FullString = Name + "|" + newPrice + "|" + newQuantity + "|";
+                        string FullString = Name + "|" + newPrice + "|" + newQuantity + "|" + dateF + "|";
                         linhasAGuardar[x] = FullString;
                     }
                     else
@@ -232,7 +243,7 @@ namespace GestaoStocks
 
         public void RemoveHistory()
         {
-            string[] defaultHistoryLines = new string[3] { "Colar Ouro|online|-25|", "Anel de Rubi|online|+3|", "Relogio Rolex|online|-2|" };
+            string[] defaultHistoryLines = new string[3] { "Colar Ouro|online|-25|24/05/2022|", "Anel de Rubi|online|+3|27/01/2023|", "Relogio Rolex|online|-2|04/02/2023|" };
 
             File.Delete(filepathSH);
 
@@ -250,9 +261,9 @@ namespace GestaoStocks
             }
         }
 
-        public void UpdateHistory(double newQuantity, string Name)
+        public void UpdateHistory(double newQuantity, string Name, string Cdate)
         {
-            string Linha = Convert.ToString(Name) + "|offline|" + Convert.ToString(newQuantity) + "|";
+            string Linha = Convert.ToString(Name) + "|offline|" + Convert.ToString(newQuantity) + "|" + Cdate + "|";
             FileStream file = new FileStream(filepathSH, FileMode.Append, FileAccess.Write);
 
             using (StreamWriter writetext = new StreamWriter(file))

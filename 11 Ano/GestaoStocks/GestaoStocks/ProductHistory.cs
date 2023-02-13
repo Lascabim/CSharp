@@ -22,6 +22,7 @@ namespace GestaoStocks
         public ProductHistory()
         {
             InitializeComponent();
+            //sc.RemoveHistory();
             GetStockHistory();
         }
 
@@ -38,33 +39,24 @@ namespace GestaoStocks
 
                     while (sr.Peek() > -1)
                     {
-                        string nome, preco, quantidade;
-                        int indexPause = 0, indexPause2 = 0, indexPause3 = 0;
+                        string nome, preco, quantidade, data, dataTemp;
+                        int indexPause = 0, indexPause2 = 0, indexPause3 = 0, indexPause4 = 0;
                         string rawline = sr.ReadLine();
 
                         indexPause = rawline.IndexOf('|', indexPause);
                         indexPause2 = rawline.IndexOf('|', indexPause + 1);
                         indexPause3 = rawline.IndexOf('|', indexPause2 + 1);
+                        indexPause4 = rawline.IndexOf('|', indexPause3 + 1);
 
                         nome = rawline.Substring(0, indexPause);
                         preco = rawline.Substring(indexPause + 1, (indexPause2 - nome.Length) - 1);
                         quantidade = rawline.Substring(indexPause2 + 1, (indexPause3 - nome.Length - preco.Length) - 2);
+                        
+                        dataTemp = rawline.Substring(indexPause3 + 1);
+                        data = dataTemp.Substring(0, 10);
 
                         string quantidadeType = quantidade.Substring(0, 1);
-
-                        /*
-                        if (quantidadeType == "-")
-                        {
-                            dataGridView1.Rows[0].DefaultCellStyle.ForeColor = Color.Red;
-                        }
-
-                        if (quantidadeType == "+")
-                        {
-                            dataGridView1.Rows[0].DefaultCellStyle.ForeColor = Color.Green;
-                        }
-                        */
-
-                        dataGridView1.Rows.Add(nome, preco, quantidade);
+                        dataGridView1.Rows.Add(nome, preco, quantidade, data);
                     }
                 }
             }

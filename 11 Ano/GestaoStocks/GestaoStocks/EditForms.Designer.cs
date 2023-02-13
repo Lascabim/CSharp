@@ -40,6 +40,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +51,9 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::GestaoStocks.Properties.Resources.images;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.radioButton3);
+            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.precoT);
             this.panel1.Controls.Add(this.quantidadeT);
             this.panel1.Controls.Add(this.button1);
@@ -62,7 +68,7 @@
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(461, 298);
+            this.panel1.Size = new System.Drawing.Size(469, 416);
             this.panel1.TabIndex = 8;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -70,7 +76,7 @@
             // 
             this.precoT.AutoSize = true;
             this.precoT.ForeColor = System.Drawing.Color.Transparent;
-            this.precoT.Location = new System.Drawing.Point(4, 253);
+            this.precoT.Location = new System.Drawing.Point(219, 13);
             this.precoT.Name = "precoT";
             this.precoT.Size = new System.Drawing.Size(41, 13);
             this.precoT.TabIndex = 17;
@@ -80,7 +86,7 @@
             // 
             this.quantidadeT.AutoSize = true;
             this.quantidadeT.ForeColor = System.Drawing.Color.Transparent;
-            this.quantidadeT.Location = new System.Drawing.Point(4, 264);
+            this.quantidadeT.Location = new System.Drawing.Point(219, 24);
             this.quantidadeT.Name = "quantidadeT";
             this.quantidadeT.Size = new System.Drawing.Size(41, 13);
             this.quantidadeT.TabIndex = 16;
@@ -94,9 +100,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(132, 232);
+            this.button1.Location = new System.Drawing.Point(26, 291);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(191, 35);
+            this.button1.Size = new System.Drawing.Size(383, 35);
             this.button1.TabIndex = 15;
             this.button1.Text = "CONFIRMAR";
             this.button1.UseVisualStyleBackColor = false;
@@ -177,7 +183,7 @@
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(412, 12);
+            this.button4.Location = new System.Drawing.Point(369, 12);
             this.button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(40, 37);
@@ -199,11 +205,48 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Produto";
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(58, 225);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(71, 22);
+            this.radioButton1.TabIndex = 18;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Online";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(178, 225);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(82, 22);
+            this.radioButton2.TabIndex = 19;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Pessoal";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(308, 225);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(58, 22);
+            this.radioButton3.TabIndex = 20;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Loja";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
             // EditForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(462, 289);
+            this.ClientSize = new System.Drawing.Size(439, 339);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -230,5 +273,8 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label precoT;
         private System.Windows.Forms.Label quantidadeT;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }

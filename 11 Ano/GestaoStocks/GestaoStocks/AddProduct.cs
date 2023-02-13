@@ -79,7 +79,10 @@ namespace GestaoStocks
             {
                 sc.AddProducts(nomeProduto, precoProduto, quantidadeProduto);
                 CheckVisiblePanels();
-                sc.UpdateHistory(Convert.ToDouble(quantidadeProduto) ,nomeProduto);
+
+                DateTime dateTime = DateTime.UtcNow.Date;
+                string Cdate = dateTime.ToString("dd/MM/yyyy");
+                sc.UpdateHistory(Convert.ToDouble(quantidadeProduto) ,nomeProduto, Cdate);
             }
         }
 

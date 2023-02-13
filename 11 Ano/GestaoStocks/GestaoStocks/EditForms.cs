@@ -72,44 +72,59 @@ namespace GestaoStocks
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int LengthprecoAtual = (precoT.Text.Length);
-            string precoAtual = (precoT.Text);
-            string precoAtualF = precoAtual.Substring(0, LengthprecoAtual - 2);
-
-            double precoNovo = Convert.ToDouble(precoAtualF);
-            double quantidadeNova = Convert.ToDouble(quantidadeT.Text);
-
-            if(textBox1.Text != "" && textBox1.Text != null && textBox2.Text != "" && textBox2.Text != "")
+            if (!radioButton1.Checked && !radioButton2.Checked && !radioButton3.Checked)
             {
-                DialogResult confirmation = MessageBox.Show("Pretendes confirmar a edição do produto?", "Editar Produto", MessageBoxButtons.YesNo);
-                if (confirmation == DialogResult.Yes)
-                {
-                    string nP = textBox1.Text;
-                    string nQ = textBox2.Text;
-                    string lA = label1.Text;
-                    sc.EditProduct(nP, nQ, lA);
-
-
-                    double oldQuantity = Convert.ToDouble(quantidadeT.Text);
-                    double newQuantity = Convert.ToDouble(nQ);
-                    double HnQ;
-
-                    if (newQuantity == oldQuantity)
-                    {
-                        HnQ = newQuantity;
-                    }
-                    else
-                    {
-                        HnQ = (newQuantity - oldQuantity);
-                    }
-
-                    sc.UpdateHistory(HnQ, lA);
-                }
+                MessageBox.Show("Tens que escolher um método de saída!");
             }
             else
             {
-                MessageBox.Show("Introduz valores válidos !");
+                int LengthprecoAtual = (precoT.Text.Length);
+                string precoAtual = (precoT.Text);
+                string precoAtualF = precoAtual.Substring(0, LengthprecoAtual - 2);
+
+                double precoNovo = Convert.ToDouble(precoAtualF);
+                double quantidadeNova = Convert.ToDouble(quantidadeT.Text);
+
+                if (textBox1.Text != "" && textBox1.Text != null && textBox2.Text != "" && textBox2.Text != "")
+                {
+                    DialogResult confirmation = MessageBox.Show("Pretendes confirmar a edição do produto?", "Editar Produto", MessageBoxButtons.YesNo);
+                    if (confirmation == DialogResult.Yes)
+                    {
+                        DateTime dateTime = DateTime.UtcNow.Date;
+                        string dataAtual = dateTime.ToString("dd/MM/yyyy");
+
+                        string nP = textBox1.Text;
+                        string nQ = textBox2.Text;
+                        string lA = label1.Text;
+                        sc.EditProduct(nP, nQ, lA, dataAtual);
+
+
+                        double oldQuantity = Convert.ToDouble(quantidadeT.Text);
+                        double newQuantity = Convert.ToDouble(nQ);
+                        double HnQ;
+
+                        if (newQuantity == oldQuantity)
+                        {
+                            HnQ = newQuantity;
+                        }
+                        else
+                        {
+                            HnQ = (newQuantity - oldQuantity);
+                        }
+
+                        sc.UpdateHistory(HnQ, lA, dataAtual);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Introduz valores válidos !");
+                }
             }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
