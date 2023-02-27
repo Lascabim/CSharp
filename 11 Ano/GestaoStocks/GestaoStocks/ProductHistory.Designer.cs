@@ -75,7 +75,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(618, 256);
+            this.button2.Location = new System.Drawing.Point(626, 256);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(50, 46);
             this.button2.TabIndex = 13;
@@ -94,7 +94,7 @@
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(582, 249);
+            this.dataGridView1.Size = new System.Drawing.Size(602, 249);
             this.dataGridView1.TabIndex = 12;
             // 
             // button6
@@ -104,7 +104,7 @@
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(628, 57);
+            this.button6.Location = new System.Drawing.Point(635, 53);
             this.button6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(40, 37);
@@ -122,7 +122,7 @@
             // saida
             // 
             this.saida.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.saida.HeaderText = "Tipo de Saída";
+            this.saida.HeaderText = "Tipo de Saída/Entrada";
             this.saida.Name = "saida";
             this.saida.ReadOnly = true;
             // 

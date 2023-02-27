@@ -103,14 +103,14 @@ namespace GestaoStocks
                     int quantidadeL = quantidadeF.Length;
 
                     // GET DATE
-                    dateF = rawline.Substring(indexPause3 + 1, indexPause4 - nomeL - precoL);
-                    MessageBox.Show(dateF);
-                    int dateL = quantidadeF.Length;
-
+                    dateF = rawline.Substring(indexPause3 + 1);
+                    int dateL = dateF.Length;
+                    string FinalDate = dateF.Substring(0, (dateL - 1));
+                    //MessageBox.Show(FinalDate);
 
                     if (nomeF == Name)
                     {
-                        string FullString = Name + "|" + newPrice + "|" + newQuantity + "|" + dateF + "|";
+                        string FullString = Name + "|" + newPrice + "|" + newQuantity + "|" + FinalDate + "|";
                         linhasAGuardar[x] = FullString;
                     }
                     else
@@ -243,7 +243,7 @@ namespace GestaoStocks
 
         public void RemoveHistory()
         {
-            string[] defaultHistoryLines = new string[3] { "Colar Ouro|online|-25|24/05/2022|", "Anel de Rubi|online|+3|27/01/2023|", "Relogio Rolex|online|-2|04/02/2023|" };
+            string[] defaultHistoryLines = new string[3] { "Colar Ouro|Online|-25|24/05/2022|", "Anel de Rubi|Online|+3|27/01/2023|", "Relogio Rolex|Online|-2|04/02/2023|" };
 
             File.Delete(filepathSH);
 
@@ -261,9 +261,9 @@ namespace GestaoStocks
             }
         }
 
-        public void UpdateHistory(double newQuantity, string Name, string Cdate)
+        public void UpdateHistory(double newQuantity, string Name, string Cdate, string TipoSaida)
         {
-            string Linha = Convert.ToString(Name) + "|offline|" + Convert.ToString(newQuantity) + "|" + Cdate + "|";
+            string Linha = Convert.ToString(Name) + "|" + TipoSaida + "|" + Convert.ToString(newQuantity) + "|" + Cdate + "|";
             FileStream file = new FileStream(filepathSH, FileMode.Append, FileAccess.Write);
 
             using (StreamWriter writetext = new StreamWriter(file))

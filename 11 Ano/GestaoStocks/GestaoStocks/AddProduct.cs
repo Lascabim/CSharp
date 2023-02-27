@@ -82,7 +82,7 @@ namespace GestaoStocks
 
                 DateTime dateTime = DateTime.UtcNow.Date;
                 string Cdate = dateTime.ToString("dd/MM/yyyy");
-                sc.UpdateHistory(Convert.ToDouble(quantidadeProduto) ,nomeProduto, Cdate);
+                sc.UpdateHistory(Convert.ToDouble(quantidadeProduto) ,nomeProduto, Cdate, "* Adicionado *");
             }
         }
 
@@ -107,6 +107,11 @@ namespace GestaoStocks
                     {
                         sc.RemoveProduct(cellValue);
                         CheckVisiblePanels();
+                        
+                        DateTime dateTime = DateTime.UtcNow.Date;
+                        string Cdate = dateTime.ToString("dd/MM/yyyy");
+                        sc.UpdateHistory(Convert.ToDouble(selectedRow.Cells["quantidade"].Value), Convert.ToString(selectedRow.Cells["nome"].Value), Cdate, "* Removido *");
+
                     }
                 }
                 else

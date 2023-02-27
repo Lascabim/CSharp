@@ -85,6 +85,21 @@ namespace GestaoStocks
                 double precoNovo = Convert.ToDouble(precoAtualF);
                 double quantidadeNova = Convert.ToDouble(quantidadeT.Text);
 
+                string tipoDado = "Tipo de Saida";
+
+                if(radioButton1.Checked)
+                {
+                    tipoDado = "Online";
+                }
+                else if (radioButton2.Checked)
+                {
+                    tipoDado = "Pessoal";
+                }
+                else if(radioButton3.Checked)
+                {
+                    tipoDado = "Loja";
+                }
+
                 if (textBox1.Text != "" && textBox1.Text != null && textBox2.Text != "" && textBox2.Text != "")
                 {
                     DialogResult confirmation = MessageBox.Show("Pretendes confirmar a edição do produto?", "Editar Produto", MessageBoxButtons.YesNo);
@@ -112,7 +127,7 @@ namespace GestaoStocks
                             HnQ = (newQuantity - oldQuantity);
                         }
 
-                        sc.UpdateHistory(HnQ, lA, dataAtual);
+                        sc.UpdateHistory(HnQ, lA, dataAtual, tipoDado);
                     }
                 }
                 else

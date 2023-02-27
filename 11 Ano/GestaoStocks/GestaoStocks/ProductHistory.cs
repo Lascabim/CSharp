@@ -80,7 +80,7 @@ namespace GestaoStocks
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DialogResult confirmation = MessageBox.Show("Prentes eliminar o histórico?", "Remover Histórico", MessageBoxButtons.YesNo);
+            DialogResult confirmation = MessageBox.Show("Prentes eliminar o histórico completo?", "Remover Histórico", MessageBoxButtons.YesNo);
             if (confirmation == DialogResult.Yes)
             {
                 sc.RemoveHistory();
